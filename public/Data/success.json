@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Total Doctors",
+        "count": 50,
+        "image": "https://i.postimg.cc/vT05bCWd/success-doctor.png"
+    },
+    {
+        "id": 2,
+        "title": "Total Reviews",
+        "count": 467,
+        "image": "https://i.postimg.cc/YC5Yr6mj/success-review.png"
+    },
+    {
+        "id": 3,
+        "title": "Patients",
+        "count": 1900,
+        "image": "https://i.postimg.cc/fRtYQ2y6/success-patients.png"
+    },
+    {
+        "id": 4,
+        "title": "Total Staffs",
+        "count": 150,
+        "image": "https://i.postimg.cc/mr7MtPQj/success-staffs.png"
+    }
+]

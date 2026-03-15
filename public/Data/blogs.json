@@ -1,0 +1,96 @@
+{
+    "blogs": [
+        {
+            "id": 1,
+            "title": "What is useState and how does it work in React?",
+            "content": {
+                "introduction": "useState is a fundamental React Hook that enables state management in functional components. It provides a way to add state to function components without converting them to class components, returning both the current state value and a function to update it.",
+                "codeExample": "const [count, setCount] = useState(0);\n\n// Using the state with proper event handling\nfunction Counter() {\n    const [count, setCount] = useState(0);\n    return (\n        <button onClick={() => setCount(prevCount => prevCount + 1)}>\n            Count is: {count}\n        </button>\n    );\n}",
+                "keyPoints": [
+                    "State updates trigger re-renders to reflect changes in the UI",
+                    "Initial state is only used during the first render",
+                    "State updates are batched and processed asynchronously for performance",
+                    "Multiple state variables can be used in a single component for different concerns",
+                    "State updates using the updater function (prevState => newState) ensure reliable updates",
+                    "useState preserves state between re-renders"
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "title": "What is the purpose of useEffect in React?",
+            "content": {
+                "introduction": "useEffect is a powerful React Hook that handles side effects in functional components. It serves as a replacement for lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount, allowing you to perform data fetching, subscriptions, DOM manipulations, and other side effects.",
+                "codeExample": "useEffect(() => {\n    // Effect code for data fetching\n    const fetchData = async () => {\n        const response = await fetch('https://api.example.com/data');\n        const data = await response.json();\n        setData(data);\n    };\n    \n    fetchData();\n    \n    // Cleanup function\n    return () => {\n        // Cleanup code here (e.g., cancel subscriptions)\n    };\n}, [dependency]); // Re-run effect when dependency changes",
+                "useCases": [
+                    "API calls and data fetching with proper cleanup",
+                    "Managing subscriptions and event listeners with automatic cleanup",
+                    "DOM manipulations and third-party library integrations",
+                    "Cleanup operations to prevent memory leaks",
+                    "Syncing with external systems or APIs",
+                    "Handling real-time data updates"
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "title": "What is a custom hook in React and when should you use one?",
+            "content": {
+                "introduction": "Custom hooks are specialized JavaScript functions that start with 'use' and can utilize other React hooks. They enable you to extract component logic into reusable functions, promoting code reuse, reducing duplication, and making components cleaner and more focused.",
+                "codeExample": "// Custom hook for managing window size\nconst useWindowSize = () => {\n    const [size, setSize] = useState({\n        width: window.innerWidth,\n        height: window.innerHeight\n    });\n\n    useEffect(() => {\n        const handleResize = () => {\n            setSize({\n                width: window.innerWidth,\n                height: window.innerHeight\n            });\n        };\n\n        // Add event listener with cleanup\n        window.addEventListener('resize', handleResize);\n        return () => window.removeEventListener('resize', handleResize);\n    }, []); // Empty dependency array for one-time setup\n\n    return size;\n};\n\n// Using the custom hook\nfunction ResponsiveComponent() {\n    const { width, height } = useWindowSize();\n    return <div>Window size: {width} x {height}</div>;\n}",
+                "useCases": [
+                    "Share complex logic between multiple components",
+                    "Manage complex state logic and reducers",
+                    "Create reusable side effects with proper cleanup",
+                    "Abstract complex business logic and API interactions",
+                    "Handle form validation and state management",
+                    "Create composable behavior hooks"
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "title": "Difference between controlled and uncontrolled components? Which one is better?",
+            "content": {
+                "introduction": "In React, form handling can be implemented using either controlled or uncontrolled components. Controlled components maintain form data in the component's state, while uncontrolled components rely on the DOM to handle form data internally. Each approach has specific use cases and trade-offs.",
+                "codeExamples": {
+                    "controlled": "// Controlled component with validation\nconst [value, setValue] = useState('');\nconst [error, setError] = useState('');\n\nconst handleChange = (e) => {\n    const newValue = e.target.value;\n    setValue(newValue);\n    setError(newValue.length < 3 ? 'Too short' : '');\n};\n\n<input\n    value={value}\n    onChange={handleChange}\n    className={error ? 'error' : ''}\n/>\n{error && <span className=\"error-text\">{error}</span>}",
+                    "uncontrolled": "// Uncontrolled component with ref\nconst inputRef = useRef();\n\nconst handleSubmit = (e) => {\n    e.preventDefault();\n    const value = inputRef.current.value;\n    // Process the form value\n};\n\n<form onSubmit={handleSubmit}>\n    <input\n        ref={inputRef}\n        defaultValue=\"default\"\n    />\n    <button type=\"submit\">Submit</button>\n</form>"
+                },
+                "comparison": {
+                    "controlled": [
+                        "React manages the form state explicitly",
+                        "More predictable with immediate access to form values",
+                        "Better for implementing instant validation",
+                        "Enables dynamic form behavior and conditional rendering",
+                        "Ideal for complex forms with interdependent fields"
+                    ],
+                    "uncontrolled": [
+                        "DOM handles the form state internally",
+                        "Simpler implementation with less code",
+                        "Better performance for simple forms",
+                        "Good for basic forms without complex validation",
+                        "Useful when integrating with non-React code or libraries"
+                    ]
+                },
+                "conclusion": "Choose controlled components when you need immediate access to form values, complex validation, or interdependent fields. Opt for uncontrolled components when building simple forms where real-time validation isn't required, or when integrating with external libraries that manage form state."
+            }
+        },
+        {
+            "id": 5,
+            "title": "Tell us something about useFormStatus() (explore and explain)",
+            "content": {
+                "introduction": "useFormStatus is a new React hook introduced in React 18 that provides real-time form submission state information within form actions. It's particularly powerful in Server Components and helps create responsive user interfaces during form submissions by managing loading states and providing feedback.",
+                "codeExample": "import { useFormStatus } from 'react-dom';\n\n// Custom submit button with loading state\nfunction SubmitButton() {\n    const { pending, data, method } = useFormStatus();\n    \n    return (\n        <button\n            disabled={pending}\n            className={pending ? 'loading' : ''}\n        >\n            {pending ? 'Submitting...' : 'Submit'}\n        </button>\n    );\n}\n\n// Using the submit button in a form\nfunction Form() {\n    return (\n        <form action=\"/api/submit\">\n            <input name=\"data\" />\n            <SubmitButton />\n        </form>\n    );\n}",
+                "keyFeatures": [
+                    "Tracks form submission state in real-time",
+                    "Provides built-in loading indicators and pending states",
+                    "Seamlessly integrates with Server Components and Actions",
+                    "Improves form UX with automatic state management",
+                    "Supports progressive enhancement",
+                    "Enables optimistic updates in forms"
+                ]
+            }
+        }
+    ]
+}
