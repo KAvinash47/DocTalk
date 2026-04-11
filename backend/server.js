@@ -81,31 +81,32 @@ app.get('/api/bookings/doctor/:doctorId', (req, res) => {
   res.json(bookings.filter(b => String(b.doctorId) === String(doctorId)));
 });
 
-// --- OPENROUTER AI INTEGRATION (FIXED) ---
+// --- OPENROUTER AI INTEGRATION (ROBUST) ---
 
 const callOpenRouter = async (message, doctorName, specialty) => {
     const API_KEY = process.env.OPENROUTER_API_KEY;
     if (!API_KEY) return "AI Key not configured on server.";
 
-    // Expanded list of high-availability free models
+    // Broad pool of free models to bypass "No endpoints found" issues
     const models = [
-        "google/gemini-2.0-flash-001:free",
+        "google/gemini-2.0-flash-exp:free",
         "google/gemini-2.0-flash-lite-preview-02-05:free",
-        "deepseek/deepseek-chat:free",
         "mistralai/mistral-7b-instruct:free",
-        "meta-llama/llama-3.3-70b-instruct:free",
-        "microsoft/phi-3-medium-128k-instruct:free"
+        "meta-llama/llama-3.1-8b-instruct:free",
+        "huggingfaceh4/zephyr-7b-beta:free",
+        "qwen/qwen-2-7b-instruct:free",
+        "google/gemini-flash-1.5-8b:free"
     ];
     
     const systemPrompt = doctorName 
-      ? `You are ${doctorName}, a professional ${specialty}. Give safe, clear advice. Short responses.`
-      : "You are a professional doctor AI assistant. Give helpful medical advice. Always include a disclaimer.";
+      ? `You are ${doctorName}, a professional ${specialty}. Give safe, clear medical guidance. Keep it brief. Always mention you are an AI representing ${doctorName}.`
+      : "You are a professional doctor AI assistant. Give safe medical advice. Always include a disclaimer.";
 
-    let lastError = "No response from AI models.";
+    let lastError = "All free models are currently at capacity.";
 
     for (const model of models) {
         try {
-            console.log(`Trying OpenRouter model: ${model}`);
+            console.log(`Checking OpenRouter model: ${model}...`);
             const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
               method: "POST",
               headers: {
@@ -125,19 +126,18 @@ const callOpenRouter = async (message, doctorName, specialty) => {
             const data = await response.json();
             
             if (data.choices && data.choices[0]?.message?.content) {
-                console.log(`✅ Success with ${model}`);
+                console.log(`✅ Success: ${model}`);
                 return data.choices[0].message.content;
             }
             
-            lastError = data.error?.message || "Model returned empty response.";
-            console.error(`❌ Model ${model} failed:`, lastError);
+            lastError = data.error?.message || "Provider busy.";
+            console.error(`❌ ${model} failed:`, lastError);
         } catch (err) {
-            lastError = err.message;
-            console.error(`❌ Connection error with ${model}`);
+            console.error(`❌ Connection error: ${model}`);
         }
     }
 
-    return `AI Service Error: ${lastError}`;
+    return `AI Service Busy: ${lastError} Please try again in 1 minute.`;
 };
 
 app.post('/api/ai-chat', async (req, res) => {
