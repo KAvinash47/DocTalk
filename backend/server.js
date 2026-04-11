@@ -10,23 +10,40 @@ const app = express();
 app.use(express.json());
 app.use(cors({ origin: "*" }));
 
+// ✅ GLOBAL REQUEST LOGGER (Helpful for Render Debugging)
+app.use((req, res, next) => {
+  console.log(`${new Date().toISOString()} - ${req.method} ${req.url}`);
+  next();
+});
+
 // ✅ Load doctors.json
 const doctorsPath = path.join(__dirname, '../public/Data/doctors.json');
 let doctors = [];
 try {
   doctors = JSON.parse(fs.readFileSync(doctorsPath, 'utf8'));
+  console.log("Doctors loaded:", doctors.length);
 } catch (err) {
   console.error("Error loading doctors:", err.message);
 }
 
-// 100% Clean In-memory storage
+// In-memory storage
 let bookings = [];
 
 // --- API Routes ---
 
-app.get('/', (req, res) => res.json({ status: "Backend is running!", total_bookings: bookings.length }));
+app.get('/', (req, res) => res.json({ 
+    status: "Backend is running!", 
+    time: new Date(),
+    env_check: process.env.OPENROUTER_API_KEY ? "API Key Found ✅" : "API Key MISSING ❌"
+}));
 
 app.get('/api/doctors', (req, res) => res.json(doctors));
+
+app.get('/api/doctors/:id', (req, res) => {
+  const doctor = doctors.find(d => String(d.id) === String(req.params.id));
+  if (!doctor) return res.status(404).json({ message: "Doctor not found" });
+  res.json(doctor);
+});
 
 app.get("/api/bookings", (req, res) => {
   res.json(bookings);
@@ -34,13 +51,9 @@ app.get("/api/bookings", (req, res) => {
 
 app.post("/api/bookings", (req, res) => {
   const { doctorId, userId, appointmentDate, timeSlot } = req.body;
-  
-  if (!doctorId || !appointmentDate || !timeSlot) {
-    return res.status(400).json({ error: "Missing required fields" });
-  }
+  if (!doctorId || !appointmentDate || !timeSlot) return res.status(400).json({ error: "Missing fields" });
 
   const doctor = doctors.find(d => String(d.id) === String(doctorId));
-  
   const booking = { 
     id: Date.now() + Math.random(), 
     status: "pending",
@@ -67,53 +80,77 @@ app.get('/api/bookings/doctor/:doctorId', (req, res) => {
   res.json(bookings.filter(b => String(b.doctorId) === String(doctorId)));
 });
 
-// --- OPENROUTER AI INTEGRATION ---
+// --- AI Chat ---
+app.post('/api/ai-chat', async (req, res) => {
+  const { message, doctorName, specialty } = req.body;
+  const API_KEY = process.env.OPENROUTER_API_KEY;
 
-const callOpenRouter = async (message, doctorName, specialty) => {
+  console.log(`AI Chat Request: "${message}" for doctor: ${doctorName || "Generic"}`);
+
+  if (!API_KEY) {
+    console.error("CRITICAL: OPENROUTER_API_KEY is missing from environment variables!");
+    return res.status(500).json({ reply: "AI Service Error: API Key not configured on server." });
+  }
+
+  try {
     const systemPrompt = doctorName 
-      ? `You are ${doctorName}, a professional ${specialty}. Give safe, clear advice. Short responses. Always mention you are an AI assistant representing ${doctorName}.`
+      ? `You are ${doctorName}, a professional ${specialty}. Give safe, clear advice. Short responses. Mention you are an AI representing ${doctorName}.`
       : "You are a professional doctor AI assistant. Give safe advice. Always include a disclaimer.";
 
-    try {
-        const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-          method: "POST",
-          headers: {
-            "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`,
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify({
-            model: "deepseek/deepseek-chat",
-            messages: [
-              { role: "system", content: systemPrompt },
-              { role: "user", content: message }
-            ]
-          })
-        });
+    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${API_KEY}`,
+        "Content-Type": "application/json",
+        "HTTP-Referer": "https://doctalk-master.vercel.app", // Optional for OpenRouter
+        "X-Title": "DocTalk"
+      },
+      body: JSON.stringify({
+        model: "deepseek/deepseek-chat",
+        messages: [
+          { role: "system", content: systemPrompt },
+          { role: "user", content: message }
+        ]
+      })
+    });
 
-        const data = await response.json();
-        return data.choices?.[0]?.message?.content || "I'm sorry, I couldn't process that request.";
-    } catch (err) {
-        console.error("OpenRouter error:", err);
-        return "AI Doctor is currently unavailable. Please try again.";
+    const data = await response.json();
+    
+    if (data.error) {
+        console.error("OpenRouter API Error:", data.error);
+        return res.status(500).json({ reply: `AI Error: ${data.error.message}` });
     }
-};
 
-app.post('/api/ai-chat', async (req, res) => {
-  try {
-    const { message, doctorName, specialty } = req.body;
-    const reply = await callOpenRouter(message, doctorName, specialty);
-    res.json({ reply });
+    const aiReply = data.choices?.[0]?.message?.content || "I'm sorry, I couldn't generate a response.";
+    res.json({ reply: aiReply });
+
   } catch (err) {
-    console.error(err);
-    res.json({ reply: "AI Doctor unavailable" });
+    console.error("AI Server Crash:", err);
+    res.status(500).json({ reply: "AI Doctor currently unavailable due to a connection error." });
   }
 });
 
+// Sync AI Assistant route
 app.post('/api/ai-doctor', async (req, res) => {
+    const { message } = req.body;
+    const API_KEY = process.env.OPENROUTER_API_KEY;
+
+    if (!API_KEY) return res.status(500).json({ response: "API Key missing" });
+
     try {
-      const { message } = req.body;
-      const reply = await callOpenRouter(message);
-      res.json({ response: reply });
+      const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+        method: "POST",
+        headers: {
+          "Authorization": `Bearer ${API_KEY}`,
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          model: "deepseek/deepseek-chat",
+          messages: [{ role: "system", content: "You are a helpful doctor AI. Give safe advice." }, { role: "user", content: message }]
+        })
+      });
+      const data = await response.json();
+      res.json({ response: data.choices?.[0]?.message?.content || "No response" });
     } catch (err) {
       res.json({ response: "AI Doctor unavailable" });
     }
