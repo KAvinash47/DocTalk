@@ -48,9 +48,13 @@ const AIChat = () => {
                 body: JSON.stringify({ message: textToSend })
             });
             const data = await response.json();
-            setMessages(prev => [...prev, { text: data.reply, sender: 'ai' }]);
+            if (response.ok) {
+                setMessages(prev => [...prev, { text: data.reply, sender: 'ai' }]);
+            } else {
+                setMessages(prev => [...prev, { text: data.reply || "AI Service Error", sender: 'ai' }]);
+            }
         } catch (error) {
-            setMessages(prev => [...prev, { text: "I'm having trouble connecting. Please check your backend.", sender: 'ai' }]);
+            setMessages(prev => [...prev, { text: "I'm having trouble connecting to the server. Please check your internet or try again later.", sender: 'ai' }]);
         } finally {
             setIsLoading(false);
         }
