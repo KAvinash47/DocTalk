@@ -2,16 +2,25 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const CustomCursor = () => {
     const cursorRef = useRef(null);
-    const mousePos = useRef({ x: 0, y: 0 });
-    const delayedPos = useRef({ x: 0, y: 0 });
+    const mousePos = useRef({ x: -100, y: -100 });
+    const delayedPos = useRef({ x: -100, y: -100 });
     const [isHovering, setIsHovering] = useState(false);
-    const [isMobile, setIsMobile] = useState(false);
+    
+    // STRICT MOBILE DETECTION
+    const [isMobile, setIsMobile] = useState(true); // Default to true to prevent flash
 
     useEffect(() => {
-        // Detect if it's a touch device
-        const touchDevice = window.matchMedia("(pointer: coarse)").matches;
-        setIsMobile(touchDevice);
-        if (touchDevice) return;
+        const checkMobile = () => {
+            const isTouch = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+            const isSmallScreen = window.innerWidth <= 768;
+            setIsMobile(isTouch || isSmallScreen);
+        };
+
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        
+        if (isMobile) return () => window.removeEventListener('resize', checkMobile);
+
         const handleMouseMove = (e) => {
             mousePos.current = { x: e.clientX, y: e.clientY };
         };
@@ -40,17 +49,19 @@ const CustomCursor = () => {
         animationFrameId = requestAnimationFrame(updateCursor);
 
         return () => {
+            window.removeEventListener('resize', checkMobile);
             window.removeEventListener('mousemove', handleMouseMove);
             window.removeEventListener('mouseover', handleMouseOver);
             cancelAnimationFrame(animationFrameId);
         };
-    }, [isHovering]);
+    }, [isMobile, isHovering]);
 
-    if (isMobile) return null;
+    if (isMobile) return null; // DO NOT RENDER ON MOBILE
 
     return (
         <div 
             ref={cursorRef}
+            id="custom-cursor"
             className="fixed top-0 left-0 pointer-events-none z-[999999] will-change-transform"
             style={{ width: '24px', height: '24px', marginLeft: '-4px', marginTop: '-4px' }}
         >

@@ -22,33 +22,33 @@ const Navbar = () => {
     }`;
 
   const navLinks = (
-    <>
-      <li><NavLink to="/" className={linkStyle}>Home</NavLink></li>
+    <div className="hidden lg:flex items-center gap-2">
+      <NavLink to="/" className={linkStyle}>Home</NavLink>
       {user?.role === "patient" && (
-        <li><NavLink to="/my-bookings" className={linkStyle}>My Bookings</NavLink></li>
+        <NavLink to="/my-bookings" className={linkStyle}>My Bookings</NavLink>
       )}
       {user?.role === "doctor" && (
-        <li><NavLink to="/dashboard" className={linkStyle}>Dashboard</NavLink></li>
+        <NavLink to="/dashboard" className={linkStyle}>Dashboard</NavLink>
       )}
-      <li><NavLink to="/blogs" className={linkStyle}>Blogs</NavLink></li>
-      <li><NavLink to="/contact" className={linkStyle}>Contact</NavLink></li>
-    </>
+      <NavLink to="/blogs" className={linkStyle}>Blogs</NavLink>
+      <NavLink to="/contact" className={linkStyle}>Contact</NavLink>
+    </div>
   );
 
   return (
-    <div className="bg-white/90 dark:bg-slate-900/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 dark:border-slate-800 transition-colors">
-      <div className="w-11/12 mx-auto py-3 flex items-center justify-between">
-
-        {/* LOGO AREA - Mobile Optimized & Clean */}
+    <nav className="w-full bg-white/90 dark:bg-slate-900/90 backdrop-blur-md sticky top-0 z-[5000] border-b border-gray-100 dark:border-slate-800 transition-colors py-3">
+      <div className="w-11/12 max-w-7xl mx-auto flex items-center justify-between">
+        
+        {/* LOGO AREA - No Hamburger logic at all */}
         <div
           onClick={() => navigate("/")}
-          className="flex items-center gap-2 sm:gap-3 cursor-pointer group shrink-0"
+          className="flex items-center gap-2 sm:gap-3 cursor-pointer group"
         >
-          <div className="p-1.5 bg-blue-600 rounded-lg shadow-lg flex items-center justify-center">
+          <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-600 rounded-lg flex items-center justify-center shadow-lg">
               <img 
                 src="https://i.postimg.cc/1XmpxyVH/logo.png" 
                 alt="Logo" 
-                className="w-5 h-5 sm:w-6 sm:h-6 brightness-0 invert object-contain" 
+                className="w-5 h-5 sm:w-6 sm:h-6 brightness-0 invert" 
               />
           </div>
           <span className="text-xl sm:text-2xl font-black bg-gradient-to-r from-blue-700 to-blue-500 dark:from-blue-400 dark:to-blue-200 bg-clip-text text-transparent tracking-tighter">
@@ -56,40 +56,37 @@ const Navbar = () => {
           </span>
         </div>
 
-        {/* DESKTOP NAV - Hidden on Mobile */}
-        <div className="hidden lg:block">
-          <ul className="flex items-center gap-2">
-            {navLinks}
-          </ul>
-        </div>
+        {/* CENTER LINKS (Desktop Only) */}
+        {navLinks}
 
-        {/* ACTIONS */}
+        {/* ACTIONS (Theme + Login/Logout) */}
         <div className="flex items-center gap-2 sm:gap-4">
           <button 
             onClick={toggleTheme}
-            className="p-2 rounded-full bg-gray-100 dark:bg-slate-800 transition-all shadow-sm"
+            className="p-2 rounded-full bg-gray-100 dark:bg-slate-800 transition-all hover:bg-gray-200 dark:hover:bg-slate-700"
           >
-            {theme === 'light' ? <Moon size={18} className="text-slate-700" /> : <Sun size={18} className="text-yellow-400" />}
+            {theme === 'light' ? <Moon size={18} /> : <Sun size={18} className="text-yellow-400" />}
           </button>
 
           {!user ? (
-            <NavLink
-              to="/login"
-              className="px-4 sm:px-8 py-2 bg-blue-600 text-white rounded-full font-black text-[10px] sm:text-xs uppercase tracking-widest"
+            <button
+              onClick={() => navigate("/login")}
+              className="px-4 sm:px-8 py-2 bg-blue-600 text-white rounded-full font-black text-[10px] sm:text-xs uppercase tracking-widest shadow-md hover:bg-blue-700 transition-all active:scale-95"
             >
               Login
-            </NavLink>
+            </button>
           ) : (
             <button
               onClick={handleLogout}
-              className="px-4 sm:px-6 py-2 border-2 border-red-100 dark:border-red-900/30 text-red-500 rounded-full font-black text-[10px] sm:text-xs uppercase tracking-widest"
+              className="px-4 sm:px-6 py-2 border-2 border-red-500 text-red-500 rounded-full font-black text-[10px] sm:text-xs uppercase tracking-widest hover:bg-red-500 hover:text-white transition-all"
             >
               Logout
             </button>
           )}
         </div>
+
       </div>
-    </div>
+    </nav>
   );
 };
 
