@@ -5,8 +5,13 @@ const CustomCursor = () => {
     const mousePos = useRef({ x: 0, y: 0 });
     const delayedPos = useRef({ x: 0, y: 0 });
     const [isHovering, setIsHovering] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
+        // Detect if it's a touch device
+        const touchDevice = window.matchMedia("(pointer: coarse)").matches;
+        setIsMobile(touchDevice);
+        if (touchDevice) return;
         const handleMouseMove = (e) => {
             mousePos.current = { x: e.clientX, y: e.clientY };
         };
@@ -40,6 +45,8 @@ const CustomCursor = () => {
             cancelAnimationFrame(animationFrameId);
         };
     }, [isHovering]);
+
+    if (isMobile) return null;
 
     return (
         <div 
