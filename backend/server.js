@@ -13,7 +13,6 @@ app.use(cors({
 app.use(express.json());
 
 // ✅ Load doctors.json
-// Note: In Docker/Render, public is copied to /app/public
 const doctorsPath = path.join(__dirname, '../public/Data/doctors.json');
 let doctors = [];
 try {
@@ -27,6 +26,8 @@ try {
 let bookings = [];
 
 // --- API Routes ---
+
+app.get('/', (req, res) => res.json({ status: "Backend is running!", time: new Date() }));
 
 app.get('/api/doctors', (req, res) => res.json(doctors));
 
@@ -59,7 +60,7 @@ app.get('/api/bookings/doctor/:doctorId', (req, res) => {
   res.json(doctorBookings);
 });
 
-// --- OPENROUTER AI INTEGRATION (ONLY) ---
+// --- OPENROUTER AI INTEGRATION ---
 
 const callOpenRouter = async (message, doctorName, specialty) => {
     const systemPrompt = doctorName 
@@ -106,7 +107,6 @@ app.post('/api/ai-doctor', async (req, res) => {
     }
 });
 
-// Health check route
 app.get('/api/health', (req, res) => res.json({ status: "ok" }));
 
 const PORT = process.env.PORT || 5001;
