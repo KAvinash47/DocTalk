@@ -81,63 +81,51 @@ app.get('/api/bookings/doctor/:doctorId', (req, res) => {
   res.json(bookings.filter(b => String(b.doctorId) === String(doctorId)));
 });
 
-// --- OPENROUTER AI INTEGRATION (ROBUST) ---
+// --- OPENROUTER AI INTEGRATION (DEEPSEEK V3 ONLY) ---
 
 const callOpenRouter = async (message, doctorName, specialty) => {
     const API_KEY = process.env.OPENROUTER_API_KEY;
     if (!API_KEY) return "AI Key not configured on server.";
 
-    // Broad pool of free models to bypass "No endpoints found" issues
-    const models = [
-        "google/gemini-2.0-flash-exp:free",
-        "google/gemini-2.0-flash-lite-preview-02-05:free",
-        "mistralai/mistral-7b-instruct:free",
-        "meta-llama/llama-3.1-8b-instruct:free",
-        "huggingfaceh4/zephyr-7b-beta:free",
-        "qwen/qwen-2-7b-instruct:free",
-        "google/gemini-flash-1.5-8b:free"
-    ];
+    // Using strictly DeepSeek V3 (deepseek/deepseek-chat)
+    const model = "deepseek/deepseek-chat";
     
     const systemPrompt = doctorName 
-      ? `You are ${doctorName}, a professional ${specialty}. Give safe, clear medical guidance. Keep it brief. Always mention you are an AI representing ${doctorName}.`
+      ? `You are ${doctorName}, a professional ${specialty}. Give safe, clear medical guidance. Keep it brief. Always mention you are an AI assistant representing ${doctorName}.`
       : "You are a professional doctor AI assistant. Give safe medical advice. Always include a disclaimer.";
 
-    let lastError = "All free models are currently at capacity.";
+    try {
+        console.log(`Requesting DeepSeek V3...`);
+        const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+          method: "POST",
+          headers: {
+            "Authorization": `Bearer ${API_KEY}`,
+            "Content-Type": "application/json",
+            "X-Title": "DocTalk"
+          },
+          body: JSON.stringify({
+            model: model,
+            messages: [
+              { role: "system", content: systemPrompt },
+              { role: "user", content: message }
+            ]
+          })
+        });
 
-    for (const model of models) {
-        try {
-            console.log(`Checking OpenRouter model: ${model}...`);
-            const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-              method: "POST",
-              headers: {
-                "Authorization": `Bearer ${API_KEY}`,
-                "Content-Type": "application/json",
-                "X-Title": "DocTalk"
-              },
-              body: JSON.stringify({
-                model: model,
-                messages: [
-                  { role: "system", content: systemPrompt },
-                  { role: "user", content: message }
-                ]
-              })
-            });
-
-            const data = await response.json();
-            
-            if (data.choices && data.choices[0]?.message?.content) {
-                console.log(`✅ Success: ${model}`);
-                return data.choices[0].message.content;
-            }
-            
-            lastError = data.error?.message || "Provider busy.";
-            console.error(`❌ ${model} failed:`, lastError);
-        } catch (err) {
-            console.error(`❌ Connection error: ${model}`);
+        const data = await response.json();
+        
+        if (data.choices && data.choices[0]?.message?.content) {
+            console.log(`✅ Success with DeepSeek V3`);
+            return data.choices[0].message.content;
         }
+        
+        const errorMsg = data.error?.message || "Model returned empty response.";
+        console.error(`❌ DeepSeek V3 failed:`, errorMsg);
+        return `AI Service Error: ${errorMsg}`;
+    } catch (err) {
+        console.error(`❌ Connection error: ${err.message}`);
+        return "AI Doctor currently unavailable.";
     }
-
-    return `AI Service Busy: ${lastError} Please try again in 1 minute.`;
 };
 
 app.post('/api/ai-chat', async (req, res) => {
