@@ -54,6 +54,7 @@ const Navbar = () => {
           <span className="text-xl sm:text-2xl font-black bg-gradient-to-r from-blue-700 to-blue-500 dark:from-blue-400 dark:to-blue-200 bg-clip-text text-transparent tracking-tighter">
             DocTalk
           </span>
+          <span className="text-[8px] font-bold bg-blue-600 text-white px-1.5 py-0.5 rounded-md ml-1 hidden sm:inline-block">LIVE v2.0</span>
         </div>
 
         {/* CENTER LINKS (Desktop Only) */}
