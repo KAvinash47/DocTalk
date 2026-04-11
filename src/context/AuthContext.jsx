@@ -18,9 +18,14 @@ const AuthProvider = ({ children }) => {
     let role = "patient";
     let id = null;
 
-    if (email === "doctor@test.com") {
+    // Smart matching for demo: doctor1@test.com -> ID 1, doctor2@test.com -> ID 2, etc.
+    if (email.startsWith("doctor") && email.includes("@")) {
       role = "doctor";
-      id = 1; // Default ID for demo doctor
+      const match = email.match(/doctor(\d+)/i);
+      id = match ? parseInt(match[1]) : 1;
+    } else if (email === "doctor@test.com") {
+      role = "doctor";
+      id = 1;
     }
 
     const userData = { email, role, id };
@@ -28,7 +33,7 @@ const AuthProvider = ({ children }) => {
     setUser(userData);
     localStorage.setItem("user", JSON.stringify(userData));
   };
-
+  Applied fuzzy match at line 18-31.
   const logout = () => {
     localStorage.removeItem("user");   // ✅ FIXED
     setUser(null);
