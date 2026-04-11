@@ -33,6 +33,8 @@ let bookings = [];
 
 app.get('/', (req, res) => res.json({ 
     status: "Backend is running!", 
+    engine: "DeepSeek V3",
+    last_update: "11:45 PM",
     key_debug: {
         present: !!process.env.OPENROUTER_API_KEY,
         length: process.env.OPENROUTER_API_KEY ? process.env.OPENROUTER_API_KEY.length : 0,
