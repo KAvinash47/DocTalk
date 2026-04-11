@@ -50,14 +50,26 @@ app.get('/api/bookings/user/:userId', (req, res) => {
 // ✅ GET doctor bookings (REQUIRED for Dashboard.jsx)
 app.get('/api/bookings/doctor/:doctorId', (req, res) => {
   const { doctorId } = req.params;
-  const doctorBookings = bookings.filter(b => String(b.doctorId) === String(doctorId));
+  console.log(`Backend: Fetching bookings for doctor ID: "${doctorId}"`);
+  console.log(`Backend: Total bookings in memory: ${bookings.length}`);
+  
+  const doctorBookings = bookings.filter(b => {
+    const match = String(b.doctorId) === String(doctorId);
+    if (match) console.log("Backend: Found matching booking:", b);
+    return match;
+  });
+  
+  console.log(`Backend: Returning ${doctorBookings.length} bookings for doctor ${doctorId}`);
   res.json(doctorBookings);
 });
 
 // ✅ POST new booking
 app.post("/api/bookings", (req, res) => {
   const newBooking = req.body;
+  console.log("Backend: Incoming POST /api/bookings body:", newBooking);
+  
   if (!newBooking || Object.keys(newBooking).length === 0) {
+    console.log("Backend: Error - No booking data provided");
     return res.status(400).json({ error: "No booking data" });
   }
 
@@ -68,7 +80,14 @@ app.post("/api/bookings", (req, res) => {
   };
 
   bookings.push(bookingWithId);
-  res.json({ success: true, message: "Booking successful", booking: bookingWithId });
+  console.log("Backend: Booking saved successfully. ID:", bookingWithId.id);
+  console.log("Backend: Total bookings now:", bookings.length);
+
+  res.json({
+    success: true,
+    message: "Booking successful",
+    booking: bookingWithId
+  });
 });
 
 // --- AI Chat ---

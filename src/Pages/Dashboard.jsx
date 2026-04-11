@@ -9,18 +9,28 @@ const Dashboard = () => {
 
   useEffect(() => {
     const fetchDoctorBookings = async () => {
-      if (!user || user.role !== "doctor") return;
+      console.log("Dashboard: Checking user...", user);
+      if (!user) {
+        console.log("Dashboard: No user found in context");
+        return;
+      }
+      if (user.role !== "doctor") {
+        console.log("Dashboard: User is not a doctor. Role:", user.role);
+        return;
+      }
       
       setLoading(true);
       try {
-        // We use user.id if it exists, otherwise fallback to 1 for demo
         const doctorId = user.id || 1;
-        const res = await fetch(`${API_BASE_URL}/api/bookings/doctor/${doctorId}`);
+        const url = `${API_BASE_URL}/api/bookings/doctor/${doctorId}`;
+        console.log("Dashboard: Fetching from...", url);
+        
+        const res = await fetch(url);
         const data = await res.json();
-
+        console.log("Dashboard: Received data:", data);
         setAppointments(data);
       } catch (error) {
-        console.error("Error fetching doctor bookings:", error);
+        console.error("Dashboard: Fetch error:", error);
       } finally {
         setLoading(false);
       }
