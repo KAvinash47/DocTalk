@@ -20,12 +20,28 @@ try {
   console.error("Error loading doctors:", err.message);
 }
 
-// In-memory storage
-let bookings = [];
+// In-memory storage with a permanent SEED booking for testing
+let bookings = [
+    { 
+        id: 12345, 
+        status: "pending",
+        doctorId: "1", 
+        userId: "test-patient@test.com",
+        appointmentDate: "2026-04-15",
+        timeSlot: "10:00 AM",
+        doctorName: "Dr. Sarah Anderson",
+        speciality: "Cardiology",
+        fee: 575
+    }
+];
 
 // --- API Routes ---
 
-app.get('/', (req, res) => res.json({ status: "Backend is running!", total_bookings: bookings.length }));
+app.get('/', (req, res) => res.json({ 
+    status: "Backend is running!", 
+    total_bookings: bookings.length,
+    active_models: ["deepseek-chat"]
+}));
 
 app.get('/api/doctors', (req, res) => res.json(doctors));
 
@@ -35,9 +51,15 @@ app.get('/api/doctors/:id', (req, res) => {
   res.json(doctor);
 });
 
-// ✅ GET all bookings (Debug)
+// ✅ GET all bookings (Admin/Debug)
 app.get("/api/bookings/all", (req, res) => {
   res.json(bookings);
+});
+
+// ✅ RESET bookings (Useful for demo fixing)
+app.get("/api/bookings/reset", (req, res) => {
+    bookings = [];
+    res.json({ message: "All bookings cleared" });
 });
 
 // ✅ GET user bookings
@@ -49,15 +71,17 @@ app.get('/api/bookings/user/:userId', (req, res) => {
   res.json(userBookings);
 });
 
-// ✅ GET doctor bookings (String-safe matching)
+// ✅ GET doctor bookings (FORCE STRING MATCHING)
 app.get('/api/bookings/doctor/:doctorId', (req, res) => {
   const { doctorId } = req.params;
-  console.log(`Fetching for doctor: ${doctorId}`);
+  console.log(`Searching bookings for doctor ID: ${doctorId}`);
+  
   const doctorBookings = bookings.filter(b => String(b.doctorId) === String(doctorId));
+  console.log(`Found ${doctorBookings.length} bookings`);
   res.json(doctorBookings);
 });
 
-// ✅ POST new booking (Ensuring String IDs)
+// ✅ POST new booking (Ensuring data is complete)
 app.post("/api/bookings", (req, res) => {
   const { doctorId, userId, appointmentDate, timeSlot } = req.body;
   
@@ -70,7 +94,7 @@ app.post("/api/bookings", (req, res) => {
   const booking = { 
     id: Date.now(), 
     status: "pending",
-    doctorId: String(doctorId), // FORCE STRING
+    doctorId: String(doctorId), 
     userId: userId || "guest",
     appointmentDate,
     timeSlot,
