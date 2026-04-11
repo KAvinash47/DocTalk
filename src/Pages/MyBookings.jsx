@@ -4,6 +4,7 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 import { ToastContainer, toast } from 'react-toastify';
 import useDocumentTitle from '../hooks/useDocumentTitle';
 import { AuthContext } from '../context/AuthContext';
+import { API_BASE_URL } from '../api/config';
 
 const MyBookings = () => {
     useDocumentTitle('My Appointments');
