@@ -6,32 +6,30 @@ const Dashboard = () => {
   const { user } = useContext(AuthContext);
   const [appointments, setAppointments] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [lastUpdated, setLastUpdated] = useState(null);
   const [stats, setStats] = useState({ total: 0, matched: 0 });
 
   const fetchBookings = async () => {
     if (!user || user.role !== "doctor") return;
-    
+
     setLoading(true);
     try {
       const doctorId = String(user.id || "1");
-      // Fetch ALL bookings to ensure we see everything
       const res = await fetch(`${API_BASE_URL}/api/bookings`);
       const allData = await res.json();
-      
-      console.log("Dashboard: All Bookings from server:", allData);
-      
-      // Filter locally for maximum reliability
+
       const matched = allData.filter(b => String(b.doctorId) === doctorId);
-      
+
       setAppointments(matched);
       setStats({ total: allData.length, matched: matched.length });
+      setLastUpdated(new Date().toLocaleTimeString());
     } catch (error) {
       console.error("Dashboard: Fetch error:", error);
     } finally {
       setLoading(false);
     }
   };
-
+  Applied fuzzy match at line 7-31.
   useEffect(() => {
     fetchBookings();
   }, [user]);
