@@ -22,8 +22,12 @@ body {
     body {
         cursor: auto !important;
     }
-    .custom-cursor-container {
+    .custom-cursor-container, 
+    [class*="custom-cursor"],
+    #custom-cursor {
         display: none !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
     }
 }
 
