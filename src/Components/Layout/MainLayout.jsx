@@ -19,7 +19,7 @@ const MainLayout = () => {
       <CustomCursor />
       <Navbar />
       {navigation.state === 'loading' && <Loader />}
-      <main className="flex-grow pb-24 md:pb-0">
+      <main className="flex-grow pb-24 md:pb-0 page-fade">
         <Suspense fallback={<Loader />}>
           <Outlet />
         </Suspense>

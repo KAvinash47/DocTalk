@@ -7,70 +7,76 @@ html {
 
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
-    @apply bg-slate-50 text-slate-900 transition-colors duration-300;
+    @apply bg-slate-50 text-slate-900 transition-colors duration-500;
     cursor: none;
     overflow-x: hidden;
 }
 
-/* Dark Mode Palette */
+/* Optimized Dark Mode Palette */
 .dark body {
     @apply bg-slate-950 text-slate-100;
 }
 
-/* Hide custom cursor on ANY touch device */
-@media (pointer: coarse) {
-    body {
-        cursor: auto !important;
-    }
-    .custom-cursor-container, 
-    [class*="custom-cursor"],
-    #custom-cursor {
-        display: none !important;
-        visibility: hidden !important;
-        pointer-events: none !important;
-    }
+/* Global Hover System for Buttons */
+button, .btn, a {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
-/* Hide desktop cursor globally but allow it to be overriden */
-body {
-    cursor: none;
+button:hover, .btn:hover {
+    transform: translateY(-2px) scale(1.03);
+    filter: brightness(1.1);
 }
 
-/* Hide system cursor on interactive elements for desktop */
-@media (pointer: fine) {
-    a, button, input, select, textarea, [role="button"], label {
-        cursor: none !important;
-    }
+button:active, .btn:active {
+    transform: translateY(0) scale(0.97);
 }
 
-/* Smooth Entrance Animations */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.animate-fade-up {
-  animation: fadeUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-  opacity: 0;
-}
-
-/* Reveal on Scroll */
+/* Premium Scroll Reveal Utility */
 .reveal {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(40px) scale(0.95);
     transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .reveal.active {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
 }
 
-.page-transition {
-    animation: fadeIn 0.5s ease-in-out;
+/* Page Transition Wrapper */
+.page-fade {
+    animation: pageFadeIn 0.6s ease-out forwards;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+@keyframes pageFadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Staggered Loading Animations */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+
+/* Hide custom cursor on ANY touch device */
+@media (pointer: coarse) {
+    body { cursor: auto !important; }
+    #custom-cursor { display: none !important; }
+}
+
+/* Loader Styling */
+.premium-loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #3b82f6;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

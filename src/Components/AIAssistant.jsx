@@ -28,7 +28,7 @@ const AIAssistant = () => {
                         New Update
                     </motion.div>
                     <h2 className="text-3xl md:text-5xl font-black text-white mb-2 tracking-tighter leading-none px-2">
-                        AI <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Voice Assistant</span>
+                        CompileXBot <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Voice Assistant</span>
                     </h2>
                     <p className="text-slate-400 font-bold uppercase tracking-widest text-[9px] md:text-[10px]">24/7 Intelligent Medical Guidance</p>
                 </div>

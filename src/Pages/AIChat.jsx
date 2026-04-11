@@ -79,7 +79,7 @@ const AIChat = () => {
                             <Bot size={24} className="text-white" />
                         </div>
                         <div>
-                            <h1 className="font-black text-lg tracking-tight">Gemini Assistant</h1>
+                            <h1 className="font-black text-lg tracking-tight">CompileXBot</h1>
                             <div className="flex items-center gap-1.5">
                                 <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></div>
                                 <span className="text-[10px] font-black uppercase text-slate-400 tracking-widest">Active Consultation</span>
