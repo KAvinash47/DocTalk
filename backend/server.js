@@ -87,12 +87,21 @@ const callOpenRouter = async (message, doctorName, specialty) => {
     const API_KEY = process.env.OPENROUTER_API_KEY;
     if (!API_KEY) return "AI Key not configured on server.";
 
-    // Using a more reliable free model name for OpenRouter
-    const models = ["google/gemini-2.0-flash-001:free", "deepseek/deepseek-chat:free", "mistralai/mistral-7b-instruct:free"];
+    // Expanded list of high-availability free models
+    const models = [
+        "google/gemini-2.0-flash-001:free",
+        "google/gemini-2.0-flash-lite-preview-02-05:free",
+        "deepseek/deepseek-chat:free",
+        "mistralai/mistral-7b-instruct:free",
+        "meta-llama/llama-3.3-70b-instruct:free",
+        "microsoft/phi-3-medium-128k-instruct:free"
+    ];
     
     const systemPrompt = doctorName 
-      ? `You are ${doctorName}, a professional ${specialty}. Give safe, clear advice. Short responses. Mention you are an AI assistant representing ${doctorName}.`
+      ? `You are ${doctorName}, a professional ${specialty}. Give safe, clear advice. Short responses.`
       : "You are a professional doctor AI assistant. Give helpful medical advice. Always include a disclaimer.";
+
+    let lastError = "No response from AI models.";
 
     for (const model of models) {
         try {
@@ -120,13 +129,15 @@ const callOpenRouter = async (message, doctorName, specialty) => {
                 return data.choices[0].message.content;
             }
             
-            console.error(`❌ Model ${model} failed:`, data.error?.message || "No content");
+            lastError = data.error?.message || "Model returned empty response.";
+            console.error(`❌ Model ${model} failed:`, lastError);
         } catch (err) {
+            lastError = err.message;
             console.error(`❌ Connection error with ${model}`);
         }
     }
 
-    return "AI Doctor is currently over capacity. Please try again in a few minutes.";
+    return `AI Service Error: ${lastError}`;
 };
 
 app.post('/api/ai-chat', async (req, res) => {
