@@ -13,6 +13,7 @@ app.use(cors({
 app.use(express.json());
 
 // ✅ Load doctors.json
+// Note: In Docker/Render, public is copied to /app/public
 const doctorsPath = path.join(__dirname, '../public/Data/doctors.json');
 let doctors = [];
 try {
@@ -105,18 +106,10 @@ app.post('/api/ai-doctor', async (req, res) => {
     }
 });
 
-// ✅ Serve Static Files in Production
-const frontendPath = path.join(__dirname, '../public');
-app.use(express.static(frontendPath));
-
-app.get('*', (req, res) => {
-    // Only serve index.html for non-API routes
-    if (!req.path.startsWith('/api')) {
-        res.sendFile(path.join(frontendPath, 'index.html'));
-    }
-});
+// Health check route
+app.get('/api/health', (req, res) => res.json({ status: "ok" }));
 
 const PORT = process.env.PORT || 5001;
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server running on port ${PORT}`);
 });
