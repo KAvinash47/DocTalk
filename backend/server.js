@@ -40,54 +40,50 @@ app.get("/api/bookings", (req, res) => {
   res.json(bookings);
 });
 
-// ✅ GET user bookings (REQUIRED for MyBookings.jsx)
+// ✅ GET user bookings (Case-Insensitive)
 app.get('/api/bookings/user/:userId', (req, res) => {
   const { userId } = req.params;
-  const userBookings = bookings.filter(b => String(b.userId).toLowerCase() === String(userId).toLowerCase());
+  const userBookings = bookings.filter(b => 
+    String(b.userId).toLowerCase() === String(userId).toLowerCase()
+  );
   res.json(userBookings);
 });
 
-// ✅ GET doctor bookings (REQUIRED for Dashboard.jsx)
+// ✅ GET doctor bookings (Flexible ID matching)
 app.get('/api/bookings/doctor/:doctorId', (req, res) => {
   const { doctorId } = req.params;
-  console.log(`Backend: Fetching bookings for doctor ID: "${doctorId}"`);
-  console.log(`Backend: Total bookings in memory: ${bookings.length}`);
-  
-  const doctorBookings = bookings.filter(b => {
-    const match = String(b.doctorId) === String(doctorId);
-    if (match) console.log("Backend: Found matching booking:", b);
-    return match;
-  });
-  
-  console.log(`Backend: Returning ${doctorBookings.length} bookings for doctor ${doctorId}`);
+  const doctorBookings = bookings.filter(b => 
+    String(b.doctorId) === String(doctorId)
+  );
   res.json(doctorBookings);
 });
 
-// ✅ POST new booking
+// ✅ POST new booking (With Data Enrichment)
 app.post("/api/bookings", (req, res) => {
-  const newBooking = req.body;
-  console.log("Backend: Incoming POST /api/bookings body:", newBooking);
+  const { doctorId, userId, appointmentDate, timeSlot } = req.body;
   
-  if (!newBooking || Object.keys(newBooking).length === 0) {
-    console.log("Backend: Error - No booking data provided");
-    return res.status(400).json({ error: "No booking data" });
+  if (!doctorId || !appointmentDate || !timeSlot) {
+    return res.status(400).json({ error: "Missing required fields" });
   }
 
+  // Find doctor details to enrich the booking
+  const doctor = doctors.find(d => String(d.id) === String(doctorId));
+  
   const bookingWithId = { 
     id: Date.now(), 
     status: "pending",
-    ...newBooking 
+    doctorId: parseInt(doctorId),
+    userId: userId || "guest",
+    appointmentDate,
+    timeSlot,
+    // Enriching data from doctors.json
+    doctorName: doctor ? doctor.name : "Unknown Doctor",
+    speciality: doctor ? doctor.specialization : "General",
+    fee: doctor ? doctor.consultationFee : 500
   };
 
   bookings.push(bookingWithId);
-  console.log("Backend: Booking saved successfully. ID:", bookingWithId.id);
-  console.log("Backend: Total bookings now:", bookings.length);
-
-  res.json({
-    success: true,
-    message: "Booking successful",
-    booking: bookingWithId
-  });
+  res.json({ success: true, message: "Booking successful", booking: bookingWithId });
 });
 
 // --- AI Chat ---
