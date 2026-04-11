@@ -17,6 +17,7 @@ const Dashboard = () => {
         const doctorId = user.id || 1;
         const res = await fetch(`${API_BASE_URL}/api/bookings/doctor/${doctorId}`);
         const data = await res.json();
+
         setAppointments(data);
       } catch (error) {
         console.error("Error fetching doctor bookings:", error);

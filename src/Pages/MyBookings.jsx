@@ -24,13 +24,14 @@ const MyBookings = () => {
 
     const processChartData = (appointments) => {
         const doctorGroups = appointments.reduce((acc, app) => {
-            if (!acc[app.doctorName]) acc[app.doctorName] = [];
-            acc[app.doctorName].push(app);
+            const name = app.doctorName || "Unknown";
+            if (!acc[name]) acc[name] = [];
+            acc[name].push(app);
             return acc;
         }, {});
         return Object.keys(doctorGroups).map(doctor => ({
             name: doctor.split(' ')[1] || doctor,
-            fee: doctorGroups[doctor].reduce((sum, app) => sum + parseInt(app.fee), 0)
+            fee: doctorGroups[doctor].reduce((sum, app) => sum + parseInt(app.fee || 0), 0)
         }));
     };
 
@@ -41,6 +42,7 @@ const MyBookings = () => {
             try {
                 const response = await fetch(`${API_BASE_URL}/api/bookings/user/${user.email}`);
                 const data = await response.json();
+                console.log("My Bookings Data:", data);
                 setAppointments(data);
                 setChartData(processChartData(data));
             } catch (error) {
@@ -83,7 +85,7 @@ const MyBookings = () => {
                                 <div key={appointment.id} className="bg-white dark:bg-slate-900 p-8 rounded-3xl shadow-xl dark:shadow-2xl shadow-blue-100/20 dark:shadow-black/50 border border-transparent dark:border-slate-800 flex justify-between items-center animate-fade-up" style={{ animationDelay: `${index * 0.1}s` }}>
                                     <div>
                                         <h3 className="text-2xl font-black text-slate-900 dark:text-white">{appointment.doctorName}</h3>
-                                        <p className="text-blue-600 dark:text-blue-400 font-bold uppercase tracking-widest text-xs mb-3">{appointment.speciality}</p>
+                                        <p className="text-blue-600 dark:text-blue-400 font-bold uppercase tracking-widest text-xs mb-3">{appointment.speciality || appointment.specialization}</p>
                                         <div className="space-y-1">
                                             <p className="text-gray-500 dark:text-slate-400 font-bold text-sm">Date: <span className="text-slate-900 dark:text-white">{appointment.appointmentDate}</span></p>
                                             <p className="text-gray-500 dark:text-slate-400 font-bold text-sm">Time: <span className="text-slate-900 dark:text-white">{appointment.timeSlot}</span></p>
