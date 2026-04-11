@@ -1,19 +1,38 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { AuthContext } from "../context/AuthContext";
 
 const Dashboard = () => {
+  const { user } = useContext(AuthContext);
   const [appointments, setAppointments] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const stored = JSON.parse(localStorage.getItem("appointments")) || [];
-    setAppointments(stored);
-  }, []);
+    const fetchDoctorBookings = async () => {
+      if (!user || user.role !== "doctor") return;
+      
+      setLoading(true);
+      try {
+        // We use user.id if it exists, otherwise fallback to 1 for demo
+        const doctorId = user.id || 1;
+        const res = await fetch(`http://127.0.0.1:5001/api/bookings/doctor/${doctorId}`);
+        const data = await res.json();
+        setAppointments(data);
+      } catch (error) {
+        console.error("Error fetching doctor bookings:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchDoctorBookings();
+  }, [user]);
 
   const handleAccept = (id) => {
     const updated = appointments.map((app) =>
       app.id === id ? { ...app, status: "accepted" } : app
     );
     setAppointments(updated);
-    localStorage.setItem("appointments", JSON.stringify(updated));
+    // Note: In this in-memory demo, status updates are local-only unless we add a PUT route
   };
 
   const handleReject = (id) => {
@@ -21,8 +40,15 @@ const Dashboard = () => {
       app.id === id ? { ...app, status: "rejected" } : app
     );
     setAppointments(updated);
-    localStorage.setItem("appointments", JSON.stringify(updated));
   };
+
+  if (loading) {
+      return (
+          <div className="min-h-screen flex items-center justify-center">
+              <span className="loading loading-spinner loading-lg text-blue-600"></span>
+          </div>
+      );
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 py-16 px-4">
@@ -56,21 +82,20 @@ const Dashboard = () => {
 
               {/* LEFT INFO */}
               <div className="space-y-1">
-
                 <h3 className="text-xl font-semibold text-gray-800">
-                  {app.doctorName}
+                  Patient ID: {app.userId}
                 </h3>
 
                 <p className="text-gray-600">
-                  {app.speciality}
+                  Appointment Date: {app.appointmentDate}
+                </p>
+
+                <p className="text-gray-600">
+                  Time Slot: <span className="font-medium">{app.timeSlot}</span>
                 </p>
 
                 <p className="text-gray-600">
                   Fee: <span className="font-medium">₹{app.fee}</span>
-                </p>
-
-                <p className="text-gray-400 text-sm">
-                  {new Date(app.bookingDate).toLocaleString()}
                 </p>
 
                 {/* STATUS BADGE */}
@@ -89,7 +114,6 @@ const Dashboard = () => {
 
               {/* RIGHT ACTIONS */}
               <div className="flex gap-3">
-
                 <button
                   onClick={() => handleAccept(app.id)}
                   disabled={app.status === "accepted"}
@@ -113,7 +137,6 @@ const Dashboard = () => {
                 >
                   Reject
                 </button>
-
               </div>
 
             </div>

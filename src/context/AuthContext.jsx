@@ -16,12 +16,14 @@ const AuthProvider = ({ children }) => {
 
   const login = (email) => {
     let role = "patient";
+    let id = null;
 
     if (email === "doctor@test.com") {
       role = "doctor";
+      id = 1; // Default ID for demo doctor
     }
 
-    const userData = { email, role };
+    const userData = { email, role, id };
 
     setUser(userData);
     localStorage.setItem("user", JSON.stringify(userData));

@@ -9,17 +9,29 @@ const MainSection = () => {
     const searchQuery = searchParams.get('search')?.toLowerCase() || '';
 
     useEffect(() => {
+        console.log("Fetching doctors from local JSON...");
         fetch('/Data/doctors.json')
             .then(res => res.json())
-            .then(data => setDoctors(data))
+            .then(data => {
+                console.log("Received doctors data:", data);
+                setDoctors(data);
+            })
+            .catch(err => console.error("Error fetching doctors:", err));
     }, []);
+
+    console.log("Current doctors state:", doctors);
+    console.log("Search query:", searchQuery);
 
     const filteredDoctors = doctors.filter(doctor => {
         if (!searchQuery) return true;
+        const name = String(doctor.name || "").toLowerCase();
+        const specialization = String(doctor.specialization || "").toLowerCase();
+        const qualification = String(doctor.qualification || "").toLowerCase();
+        
         return (
-            doctor.name.toLowerCase().includes(searchQuery) ||
-            doctor.specialization.toLowerCase().includes(searchQuery) ||
-            doctor.qualification.toLowerCase().includes(searchQuery)
+            name.includes(searchQuery) ||
+            specialization.includes(searchQuery) ||
+            qualification.includes(searchQuery)
         );
     });
 
