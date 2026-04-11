@@ -1,21 +1,81 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
-    background-color: #EFEFEF;
+    @apply bg-slate-50 text-slate-900 transition-colors duration-300;
+    cursor: none !important;
+    overflow-x: hidden;
 }
+
+/* Optimized Dark Mode Palette */
+.dark body {
+    @apply bg-slate-950 text-slate-100;
+}
+
+.dark .bg-white {
+    @apply bg-slate-900 border-slate-800;
+}
+
+.dark .text-gray-600, .dark .text-slate-600 {
+    @apply text-slate-400;
+}
+
+.dark .text-gray-900, .dark .text-slate-900 {
+    @apply text-white;
+}
+
+.dark .border-gray-100, .dark .border-slate-100 {
+    @apply border-slate-800;
+}
+
+/* Hide cursor on all interactive elements */
+a, button, input, select, textarea, [role="button"], label {
+    cursor: none !important;
+}
+
+/* Disable custom cursor on mobile/touch devices */
+@media (hover: none) and (pointer: coarse) {
+    body {
+        cursor: auto !important;
+    }
+    .custom-cursor-container {
+        display: none !important;
+    }
+}
+
+/* Smooth Entrance Animations */
 @keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .animate-fade-up {
-  animation: fadeUp 1s ease forwards;
+  animation: fadeUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  opacity: 0;
+}
+
+/* Reveal on Scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.page-transition {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }

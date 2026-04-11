@@ -1,5 +1,6 @@
 import { useEffect, useState, useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
+import { API_BASE_URL } from "../api/config";
 
 const Dashboard = () => {
   const { user } = useContext(AuthContext);
@@ -14,7 +15,7 @@ const Dashboard = () => {
       try {
         // We use user.id if it exists, otherwise fallback to 1 for demo
         const doctorId = user.id || 1;
-        const res = await fetch(`http://127.0.0.1:5001/api/bookings/doctor/${doctorId}`);
+        const res = await fetch(`${API_BASE_URL}/api/bookings/doctor/${doctorId}`);
         const data = await res.json();
         setAppointments(data);
       } catch (error) {
