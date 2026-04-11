@@ -29,7 +29,7 @@ const Dashboard = () => {
       setLoading(false);
     }
   };
-  Applied fuzzy match at line 7-31.
+
   useEffect(() => {
     fetchBookings();
   }, [user]);
@@ -60,7 +60,7 @@ const Dashboard = () => {
             <span className="px-4 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-xs font-black uppercase">
                 Logged in as ID: {user?.id || "1"}
             </span>
-            <button 
+            <button
                 onClick={fetchBookings}
                 className="text-xs font-bold text-blue-500 underline hover:text-blue-700"
             >

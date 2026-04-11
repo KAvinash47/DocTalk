@@ -33,7 +33,7 @@ const AuthProvider = ({ children }) => {
     setUser(userData);
     localStorage.setItem("user", JSON.stringify(userData));
   };
-  Applied fuzzy match at line 18-31.
+
   const logout = () => {
     localStorage.removeItem("user");   // ✅ FIXED
     setUser(null);
