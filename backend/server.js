@@ -7,10 +7,16 @@ require('dotenv').config();
 const app = express();
 app.use(cors({
   origin: "*",
-  methods: ["GET", "POST"],
+  methods: ["GET", "POST", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type"]
 }));
 app.use(express.json());
+
+// Log all requests
+app.use((req, res, next) => {
+  console.log(`${new Date().toISOString()} - ${req.method} ${req.url}`);
+  next();
+});
 
 // ✅ Load doctors.json
 const doctorsPath = path.join(__dirname, '../public/Data/doctors.json');
@@ -37,14 +43,42 @@ app.get('/api/doctors/:id', (req, res) => {
   res.json(doctor);
 });
 
+// ✅ NEW: Generic bookings route with query param support
+app.get('/api/bookings', (req, res) => {
+  const { userId, doctorId } = req.query;
+  let filtered = [...bookings];
+  
+  if (userId) {
+    filtered = filtered.filter(b => String(b.userId).toLowerCase() === String(userId).toLowerCase());
+  }
+  if (doctorId) {
+    filtered = filtered.filter(b => b.doctorId === parseInt(doctorId));
+  }
+  
+  res.json(filtered);
+});
+
 app.post('/api/bookings', (req, res) => {
   const { doctorId, userId, appointmentDate, timeSlot } = req.body;
+  console.log("Incoming booking:", req.body);
+  
   if (!doctorId || !appointmentDate || !timeSlot) return res.status(400).json({ message: "Missing fields" });
   const doctor = doctors.find(d => d.id === parseInt(doctorId));
   if (!doctor) return res.status(404).json({ message: "Doctor not found" });
 
-  const booking = { id: Date.now(), doctorId: parseInt(doctorId), userId: userId || "guest", doctorName: doctor.name, speciality: doctor.specialization, fee: doctor.consultationFee, appointmentDate, timeSlot, status: "pending" };
+  const booking = { 
+    id: Date.now(), 
+    doctorId: parseInt(doctorId), 
+    userId: userId || "guest", 
+    doctorName: doctor.name, 
+    speciality: doctor.specialization, 
+    fee: doctor.consultationFee, 
+    appointmentDate, 
+    timeSlot, 
+    status: "pending" 
+  };
   bookings.push(booking);
+  console.log("Booking saved. Total bookings:", bookings.length);
   res.json({ message: "Booking successful", booking });
 });
 
@@ -67,23 +101,28 @@ const callOpenRouter = async (message, doctorName, specialty) => {
       ? `You are ${doctorName}, a professional ${specialty}. Speak in a professional, empathetic tone. Give safe, clear medical guidance. Keep responses short. Always mention you are an AI assistant representing ${doctorName}.`
       : "You are a professional doctor AI assistant. Give helpful, safe, and simple medical advice. Always include a disclaimer that you are an AI.";
 
-    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`,
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        model: "deepseek/deepseek-chat",
-        messages: [
-          { role: "system", content: systemPrompt },
-          { role: "user", content: message }
-        ]
-      })
-    });
+    try {
+        const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+          method: "POST",
+          headers: {
+            "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`,
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            model: "deepseek/deepseek-chat",
+            messages: [
+              { role: "system", content: systemPrompt },
+              { role: "user", content: message }
+            ]
+          })
+        });
 
-    const data = await response.json();
-    return data.choices?.[0]?.message?.content || "No response";
+        const data = await response.json();
+        return data.choices?.[0]?.message?.content || "No response";
+    } catch (err) {
+        console.error("OpenRouter error:", err);
+        return "AI Service Error";
+    }
 };
 
 app.post('/api/ai-chat', async (req, res) => {
