@@ -33,7 +33,11 @@ let bookings = [];
 
 app.get('/', (req, res) => res.json({ 
     status: "Backend is running!", 
-    env_check: process.env.OPENROUTER_API_KEY ? "API Key Found" : "API Key MISSING"
+    key_debug: {
+        present: !!process.env.OPENROUTER_API_KEY,
+        length: process.env.OPENROUTER_API_KEY ? process.env.OPENROUTER_API_KEY.length : 0,
+        prefix: process.env.OPENROUTER_API_KEY ? process.env.OPENROUTER_API_KEY.substring(0, 7) : "None"
+    }
 }));
 
 app.get('/api/doctors', (req, res) => res.json(doctors));
