@@ -25,7 +25,7 @@ let bookings = [];
 
 // --- API Routes ---
 
-app.get('/', (req, res) => res.json({ status: "Backend is running!" }));
+app.get('/', (req, res) => res.json({ status: "Backend is running!", total_bookings: bookings.length }));
 
 app.get('/api/doctors', (req, res) => res.json(doctors));
 
@@ -35,12 +35,12 @@ app.get('/api/doctors/:id', (req, res) => {
   res.json(doctor);
 });
 
-// ✅ GET all bookings
-app.get("/api/bookings", (req, res) => {
+// ✅ GET all bookings (Debug)
+app.get("/api/bookings/all", (req, res) => {
   res.json(bookings);
 });
 
-// ✅ GET user bookings (Case-Insensitive)
+// ✅ GET user bookings
 app.get('/api/bookings/user/:userId', (req, res) => {
   const { userId } = req.params;
   const userBookings = bookings.filter(b => 
@@ -49,16 +49,15 @@ app.get('/api/bookings/user/:userId', (req, res) => {
   res.json(userBookings);
 });
 
-// ✅ GET doctor bookings (Flexible ID matching)
+// ✅ GET doctor bookings (String-safe matching)
 app.get('/api/bookings/doctor/:doctorId', (req, res) => {
   const { doctorId } = req.params;
-  const doctorBookings = bookings.filter(b => 
-    String(b.doctorId) === String(doctorId)
-  );
+  console.log(`Fetching for doctor: ${doctorId}`);
+  const doctorBookings = bookings.filter(b => String(b.doctorId) === String(doctorId));
   res.json(doctorBookings);
 });
 
-// ✅ POST new booking (With Data Enrichment)
+// ✅ POST new booking (Ensuring String IDs)
 app.post("/api/bookings", (req, res) => {
   const { doctorId, userId, appointmentDate, timeSlot } = req.body;
   
@@ -66,24 +65,22 @@ app.post("/api/bookings", (req, res) => {
     return res.status(400).json({ error: "Missing required fields" });
   }
 
-  // Find doctor details to enrich the booking
   const doctor = doctors.find(d => String(d.id) === String(doctorId));
   
-  const bookingWithId = { 
+  const booking = { 
     id: Date.now(), 
     status: "pending",
-    doctorId: parseInt(doctorId),
+    doctorId: String(doctorId), // FORCE STRING
     userId: userId || "guest",
     appointmentDate,
     timeSlot,
-    // Enriching data from doctors.json
-    doctorName: doctor ? doctor.name : "Unknown Doctor",
+    doctorName: doctor ? doctor.name : "Doctor",
     speciality: doctor ? doctor.specialization : "General",
     fee: doctor ? doctor.consultationFee : 500
   };
 
-  bookings.push(bookingWithId);
-  res.json({ success: true, message: "Booking successful", booking: bookingWithId });
+  bookings.push(booking);
+  res.json({ success: true, message: "Booking successful", booking });
 });
 
 // --- AI Chat ---

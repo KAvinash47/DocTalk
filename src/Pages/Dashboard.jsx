@@ -21,7 +21,7 @@ const Dashboard = () => {
       
       setLoading(true);
       try {
-        const doctorId = user.id || 1;
+        const doctorId = String(user.id || "1");
         const url = `${API_BASE_URL}/api/bookings/doctor/${doctorId}`;
         console.log("Dashboard: Fetching from...", url);
         
