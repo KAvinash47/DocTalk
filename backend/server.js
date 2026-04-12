@@ -103,7 +103,7 @@ app.post('/api/ai-chat', async (req, res) => {
         res.json({ reply });
     } catch (error) {
         console.error("AI Chat Error:", error);
-        res.status(500).json({ reply: "Doctor AI is currently unavailable." });
+        res.status(500).json({ reply: "The AI engine reported an error. Please try again in a moment. (v2)" });
     }
 });
 
@@ -121,7 +121,7 @@ app.post('/api/ai-check', async (req, res) => {
         res.json({ reply });
     } catch (error) {
         console.error("AI Check Error:", error);
-        res.status(500).json({ reply: "AI analysis is currently unavailable." });
+        res.status(500).json({ reply: "The AI engine reported an error. Please try again in a moment. (v2)" });
     }
 });
 
