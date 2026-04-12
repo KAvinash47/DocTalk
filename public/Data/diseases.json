@@ -1,1602 +1,3202 @@
 [
     {
         "id": "1",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Hemophilia",
+        "description": "Comprehensive medical information and AI guide for Hemophilia. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "2",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "A, Hemophilia",
+        "description": "Comprehensive medical information and AI guide for A, Hemophilia. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "3",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Hemophilia A",
+        "description": "Comprehensive medical information and AI guide for Hemophilia A. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "4",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Hepatitis A",
+        "description": "Comprehensive medical information and AI guide for Hepatitis A. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧪",
+        "category": "Hepatologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Hepatologist"
     },
     {
         "id": "5",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "A, Hepatitis",
+        "description": "Comprehensive medical information and AI guide for A, Hepatitis. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧪",
+        "category": "Hepatologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Hepatologist"
     },
     {
         "id": "6",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Abdominal Aortic Aneurysm",
+        "description": "Comprehensive medical information and AI guide for Abdominal Aortic Aneurysm. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "❤️",
+        "category": "Cardiologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Cardiologist"
     },
     {
         "id": "7",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "AAA",
+        "description": "Comprehensive medical information and AI guide for AAA. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "8",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Alpha 1 Antitrypsin Deficiency",
+        "description": "Comprehensive medical information and AI guide for Alpha 1 Antitrypsin Deficiency. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "9",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "AAT",
+        "description": "Comprehensive medical information and AI guide for AAT. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "10",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "AATD",
+        "description": "Comprehensive medical information and AI guide for AATD. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "11",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Scar Tissue",
+        "description": "Comprehensive medical information and AI guide for Scar Tissue. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "12",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Abdominal Adhesions",
+        "description": "Comprehensive medical information and AI guide for Abdominal Adhesions. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🥣",
+        "category": "Gastroenterologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Gastroenterologist"
     },
     {
         "id": "13",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Heat Cramps",
+        "description": "Comprehensive medical information and AI guide for Heat Cramps. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "14",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Abdominal Cramps",
+        "description": "Comprehensive medical information and AI guide for Abdominal Cramps. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🥣",
+        "category": "Gastroenterologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Gastroenterologist"
     },
     {
         "id": "15",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Hernia Overview",
+        "description": "Comprehensive medical information and AI guide for Hernia Overview. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "16",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Abdominal Hernia",
+        "description": "Comprehensive medical information and AI guide for Abdominal Hernia. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🥣",
+        "category": "Gastroenterologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Gastroenterologist"
     },
     {
         "id": "17",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Abdominal Migraines in Children and Adults",
+        "description": "Comprehensive medical information and AI guide for Abdominal Migraines in Children and Adults. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧠",
+        "category": "Neurologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Neurologist"
     },
     {
         "id": "18",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Causes, Remedies, Treatment",
+        "description": "Comprehensive medical information and AI guide for Causes, Remedies, Treatment. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "19",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Abdominal Pain",
+        "description": "Comprehensive medical information and AI guide for Abdominal Pain. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🥣",
+        "category": "Gastroenterologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Gastroenterologist"
     },
     {
         "id": "20",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Abdominoplasty",
+        "description": "Comprehensive medical information and AI guide for Abdominoplasty. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "21",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Tummy Tuck",
+        "description": "Comprehensive medical information and AI guide for Tummy Tuck. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "22",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Ablation Therapy for Arrhythmias",
+        "description": "Comprehensive medical information and AI guide for Ablation Therapy for Arrhythmias. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "❤️",
+        "category": "Cardiologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Cardiologist"
     },
     {
         "id": "23",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Endometrial Ablation",
+        "description": "Comprehensive medical information and AI guide for Endometrial Ablation. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "24",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Ablation, Endometrial",
+        "description": "Comprehensive medical information and AI guide for Ablation, Endometrial. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "25",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Ablation, Uterus",
+        "description": "Comprehensive medical information and AI guide for Ablation, Uterus. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🚺",
+        "category": "Gynecologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Gynecologist"
     },
     {
         "id": "26",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Uterus Ablation",
+        "description": "Comprehensive medical information and AI guide for Uterus Ablation. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🚺",
+        "category": "Gynecologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Gynecologist"
     },
     {
         "id": "27",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Heart Rhythm Disorders",
+        "description": "Comprehensive medical information and AI guide for Heart Rhythm Disorders. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "❤️",
+        "category": "Cardiologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Cardiologist"
     },
     {
         "id": "28",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Abnormal Heart Rhythms",
+        "description": "Comprehensive medical information and AI guide for Abnormal Heart Rhythms. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "❤️",
+        "category": "Cardiologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Cardiologist"
     },
     {
         "id": "29",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Liver Blood Tests",
+        "description": "Comprehensive medical information and AI guide for Liver Blood Tests. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧪",
+        "category": "Cardiologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Cardiologist"
     },
     {
         "id": "30",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Abnormal Liver Enzymes",
+        "description": "Comprehensive medical information and AI guide for Abnormal Liver Enzymes. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧪",
+        "category": "Hepatologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Hepatologist"
     },
     {
         "id": "31",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Vaginal Bleeding",
+        "description": "Comprehensive medical information and AI guide for Vaginal Bleeding. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🚺",
+        "category": "Gynecologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Gynecologist"
     },
     {
         "id": "32",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Abnormal Vagnial Bleeding",
+        "description": "Comprehensive medical information and AI guide for Abnormal Vagnial Bleeding. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "33",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Miscarriage Causes and Symptoms",
+        "description": "Comprehensive medical information and AI guide for Miscarriage Causes and Symptoms. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "34",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Abortion, Spontaneous",
+        "description": "Comprehensive medical information and AI guide for Abortion, Spontaneous. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
-        "category": "General",
+        "category": "Gynecologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Gynecologist"
     },
     {
         "id": "35",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Spontaneous Abortion",
+        "description": "Comprehensive medical information and AI guide for Spontaneous Abortion. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
-        "category": "General",
+        "category": "Gynecologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Gynecologist"
     },
     {
         "id": "36",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Cuts, Scrapes and Puncture Wounds",
+        "description": "Comprehensive medical information and AI guide for Cuts, Scrapes and Puncture Wounds. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "37",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Scrapes and Puncture Wounds Cuts",
+        "description": "Comprehensive medical information and AI guide for Scrapes and Puncture Wounds Cuts. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "38",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Abrasion",
+        "description": "Comprehensive medical information and AI guide for Abrasion. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "39",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Abscessed Tooth Guide",
+        "description": "Comprehensive medical information and AI guide for Abscessed Tooth Guide. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "40",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Boils",
+        "description": "Comprehensive medical information and AI guide for Boils. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧴",
+        "category": "Dermatologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Dermatologist"
     },
     {
         "id": "41",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Abscesses, Skin",
+        "description": "Comprehensive medical information and AI guide for Abscesses, Skin. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧴",
+        "category": "Dermatologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Dermatologist"
     },
     {
         "id": "42",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Skin Abscesses",
+        "description": "Comprehensive medical information and AI guide for Skin Abscesses. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧴",
+        "category": "Dermatologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Dermatologist"
     },
     {
         "id": "43",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Amenorrhea",
+        "description": "Comprehensive medical information and AI guide for Amenorrhea. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "44",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Absence of Menstrual Periods",
+        "description": "Comprehensive medical information and AI guide for Absence of Menstrual Periods. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🚺",
+        "category": "Gynecologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Gynecologist"
     },
     {
         "id": "45",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Urinary Incontinence Products for Men",
+        "description": "Comprehensive medical information and AI guide for Urinary Incontinence Products for Men. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "46",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Absorbent Products Incontinence",
+        "description": "Comprehensive medical information and AI guide for Absorbent Products Incontinence. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "47",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Natural Methods of Birth Control",
+        "description": "Comprehensive medical information and AI guide for Natural Methods of Birth Control. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "48",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Abstinence Method of Birth Control",
+        "description": "Comprehensive medical information and AI guide for Abstinence Method of Birth Control. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "49",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Child Abuse Facts",
+        "description": "Comprehensive medical information and AI guide for Child Abuse Facts. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "50",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Abuse, Child",
+        "description": "Comprehensive medical information and AI guide for Abuse, Child. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "51",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Child Abuse",
+        "description": "Comprehensive medical information and AI guide for Child Abuse. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "52",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Anabolic Steroid Abuse",
+        "description": "Comprehensive medical information and AI guide for Anabolic Steroid Abuse. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "53",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Abuse, Steroid",
+        "description": "Comprehensive medical information and AI guide for Abuse, Steroid. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "54",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Steroid Abuse",
+        "description": "Comprehensive medical information and AI guide for Steroid Abuse. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "55",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Khat",
+        "description": "Comprehensive medical information and AI guide for Khat. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "56",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Abyssinian Tea",
+        "description": "Comprehensive medical information and AI guide for Abyssinian Tea. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "57",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "ACA or ObamaCare",
+        "description": "Comprehensive medical information and AI guide for ACA or ObamaCare. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "58",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Affordable Care Act",
+        "description": "Comprehensive medical information and AI guide for Affordable Care Act. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "59",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "ACA",
+        "description": "Comprehensive medical information and AI guide for ACA. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "60",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Ascites",
+        "description": "Comprehensive medical information and AI guide for Ascites. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "61",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Accumulation of Fluid in the Abdominal Cavity",
+        "description": "Comprehensive medical information and AI guide for Accumulation of Fluid in the Abdominal Cavity. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🤒",
+        "category": "Gastroenterologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Gastroenterologist"
     },
     {
         "id": "62",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Tylenol Liver Damage",
+        "description": "Comprehensive medical information and AI guide for Tylenol Liver Damage. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧪",
+        "category": "Hepatologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Hepatologist"
     },
     {
         "id": "63",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Acetaminophen Liver Damage",
+        "description": "Comprehensive medical information and AI guide for Acetaminophen Liver Damage. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧪",
+        "category": "Hepatologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Hepatologist"
     },
     {
         "id": "64",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Achalasia",
+        "description": "Comprehensive medical information and AI guide for Achalasia. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "65",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Aches, Pain, Fever",
+        "description": "Comprehensive medical information and AI guide for Aches, Pain, Fever. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🤒",
+        "category": "Gastroenterologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Gastroenterologist"
     },
     {
         "id": "66",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Aches",
+        "description": "Comprehensive medical information and AI guide for Aches. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "67",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Achilles Tendon Rupture",
+        "description": "Comprehensive medical information and AI guide for Achilles Tendon Rupture. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "68",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Achondroplasia",
+        "description": "Comprehensive medical information and AI guide for Achondroplasia. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "69",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Achondroplastic Dwarfism",
+        "description": "Comprehensive medical information and AI guide for Achondroplastic Dwarfism. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "70",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "GERD",
+        "description": "Comprehensive medical information and AI guide for GERD. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "71",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
+        "name": "Gastroesophageal Reflux Disease",
+        "description": "Comprehensive medical information and AI guide for Gastroesophageal Reflux Disease. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🤒",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "72",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
+        "name": "Acid Reflux",
+        "description": "Comprehensive medical information and AI guide for Acid Reflux. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🤒",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "73",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Heartburn and Pregnancy",
+        "description": "Comprehensive medical information and AI guide for Heartburn and Pregnancy. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "❤️",
+        "category": "Cardiologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Cardiologist"
     },
     {
         "id": "74",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
+        "name": "Acid Reflux during Pregnancy",
+        "description": "Comprehensive medical information and AI guide for Acid Reflux during Pregnancy. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🤒",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "75",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "GERD in Infants and Children",
+        "description": "Comprehensive medical information and AI guide for GERD in Infants and Children. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "76",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
+        "name": "Acid Reflux in Infants and Children",
+        "description": "Comprehensive medical information and AI guide for Acid Reflux in Infants and Children. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🤒",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "77",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
+        "name": "Acne",
+        "description": "Comprehensive medical information and AI guide for Acne. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧴",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "78",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
+        "name": "Acne Cystic",
+        "description": "Comprehensive medical information and AI guide for Acne Cystic. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧴",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "79",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Rosacea",
+        "description": "Comprehensive medical information and AI guide for Rosacea. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "80",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
+        "name": "Acne Rosacea",
+        "description": "Comprehensive medical information and AI guide for Acne Rosacea. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧴",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "81",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Scars",
+        "description": "Comprehensive medical information and AI guide for Scars. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "82",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
+        "name": "Acne Scars",
+        "description": "Comprehensive medical information and AI guide for Acne Scars. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧴",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "83",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Brain Damage: Symptoms, Causes, Treatment",
+        "description": "Comprehensive medical information and AI guide for Brain Damage: Symptoms, Causes, Treatment. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧠",
+        "category": "Neurologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Neurologist"
     },
     {
         "id": "84",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Acquired Brain Injury",
+        "description": "Comprehensive medical information and AI guide for Acquired Brain Injury. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧠",
+        "category": "Neurologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Neurologist"
     },
     {
         "id": "85",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Acquired, Congenital",
+        "description": "Comprehensive medical information and AI guide for Acquired, Congenital. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "86",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Congenital Acquired",
+        "description": "Comprehensive medical information and AI guide for Congenital Acquired. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "87",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Bronchiectasis",
+        "description": "Comprehensive medical information and AI guide for Bronchiectasis. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "88",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Acquired Bronchiectasis",
+        "description": "Comprehensive medical information and AI guide for Acquired Bronchiectasis. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "89",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Landau-Kleffner Syndrome",
+        "description": "Comprehensive medical information and AI guide for Landau-Kleffner Syndrome. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "90",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Acquired Epileptic Aphasia",
+        "description": "Comprehensive medical information and AI guide for Acquired Epileptic Aphasia. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "91",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Hydrocephalus",
+        "description": "Comprehensive medical information and AI guide for Hydrocephalus. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "92",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Acquired Hydrocephalus",
+        "description": "Comprehensive medical information and AI guide for Acquired Hydrocephalus. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "93",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "AIDS",
+        "description": "Comprehensive medical information and AI guide for AIDS. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "94",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Acquired Immunodeficiency Syndrome",
+        "description": "Comprehensive medical information and AI guide for Acquired Immunodeficiency Syndrome. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "95",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
-        "icon": "🩺",
-        "category": "General",
+        "name": "Skin Tag",
+        "description": "Comprehensive medical information and AI guide for Skin Tag. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧴",
+        "category": "Dermatologist",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
-        "specialist": "General Physician"
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Dermatologist"
     },
     {
         "id": "96",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Acrochordon",
+        "description": "Comprehensive medical information and AI guide for Acrochordon. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "97",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Cushing's Syndrome",
+        "description": "Comprehensive medical information and AI guide for Cushing's Syndrome. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "98",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "ACTH-dependent Hypercortisolism",
+        "description": "Comprehensive medical information and AI guide for ACTH-dependent Hypercortisolism. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "99",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "ACTH-independent Hypercortisolism",
+        "description": "Comprehensive medical information and AI guide for ACTH-independent Hypercortisolism. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "100",
-        "name": "Unknown Condition",
-        "description": "Medical information and guide for Unknown Condition.",
+        "name": "Actinic Keratosis",
+        "description": "Comprehensive medical information and AI guide for Actinic Keratosis. Learn about symptoms, causes, and recommended treatments.",
         "icon": "🩺",
         "category": "General",
         "symptoms": [
             "Check with CompileXBot for a detailed symptom analysis."
         ],
-        "causes": "Varies by patient history and environment.",
+        "causes": "Varies by patient history, genetics, and environment.",
         "treatment": "Consult a specialist for a personalized treatment plan.",
         "diet": "Maintain a balanced diet suitable for your condition.",
         "exercises": "Light physical activity as recommended by your doctor.",
-        "precautions": "Regular monitoring and professional consultation.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "101",
+        "name": "Acupuncture",
+        "description": "Comprehensive medical information and AI guide for Acupuncture. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "102",
+        "name": "Vertigo Overview",
+        "description": "Comprehensive medical information and AI guide for Vertigo Overview. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "103",
+        "name": "Acustic Neuroma",
+        "description": "Comprehensive medical information and AI guide for Acustic Neuroma. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "Neurologist",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Neurologist"
+    },
+    {
+        "id": "104",
+        "name": "Acute and Chronic Bursitis",
+        "description": "Comprehensive medical information and AI guide for Acute and Chronic Bursitis. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "105",
+        "name": "Inflammation of the Prostate Gland",
+        "description": "Comprehensive medical information and AI guide for Inflammation of the Prostate Gland. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "106",
+        "name": "Prostatitis",
+        "description": "Comprehensive medical information and AI guide for Prostatitis. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "107",
+        "name": "Acute Bacterial Prostatitis",
+        "description": "Comprehensive medical information and AI guide for Acute Bacterial Prostatitis. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "108",
+        "name": "Compartment Syndrome",
+        "description": "Comprehensive medical information and AI guide for Compartment Syndrome. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "109",
+        "name": "Acute Compartment Syndrome",
+        "description": "Comprehensive medical information and AI guide for Acute Compartment Syndrome. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "110",
+        "name": "Hepatitis B",
+        "description": "Comprehensive medical information and AI guide for Hepatitis B. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧪",
+        "category": "Hepatologist",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Hepatologist"
+    },
+    {
+        "id": "111",
+        "name": "Acute Hepatitis B",
+        "description": "Comprehensive medical information and AI guide for Acute Hepatitis B. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧪",
+        "category": "Hepatologist",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Hepatologist"
+    },
+    {
+        "id": "112",
+        "name": "Porphyria",
+        "description": "Comprehensive medical information and AI guide for Porphyria. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "113",
+        "name": "Acute Intermittent Porphyria",
+        "description": "Comprehensive medical information and AI guide for Acute Intermittent Porphyria. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "114",
+        "name": "Kidney Failure",
+        "description": "Comprehensive medical information and AI guide for Kidney Failure. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "115",
+        "name": "Acute Kidney Failure",
+        "description": "Comprehensive medical information and AI guide for Acute Kidney Failure. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "116",
+        "name": "ARDS",
+        "description": "Comprehensive medical information and AI guide for ARDS. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "117",
+        "name": "Acute Lung Injury",
+        "description": "Comprehensive medical information and AI guide for Acute Lung Injury. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "118",
+        "name": "Leukemia",
+        "description": "Comprehensive medical information and AI guide for Leukemia. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "119",
+        "name": "Acute Lymphocytic Leukemia",
+        "description": "Comprehensive medical information and AI guide for Acute Lymphocytic Leukemia. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "120",
+        "name": "Acute Myeloid Leukemia",
+        "description": "Comprehensive medical information and AI guide for Acute Myeloid Leukemia. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "121",
+        "name": "Pancreatitis",
+        "description": "Comprehensive medical information and AI guide for Pancreatitis. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "122",
+        "name": "Acute Pancreatitis",
+        "description": "Comprehensive medical information and AI guide for Acute Pancreatitis. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "123",
+        "name": "Acute Porphyria",
+        "description": "Comprehensive medical information and AI guide for Acute Porphyria. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "124",
+        "name": "Acute Respiratory Distress Syndrome",
+        "description": "Comprehensive medical information and AI guide for Acute Respiratory Distress Syndrome. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "125",
+        "name": "Valley Fever",
+        "description": "Comprehensive medical information and AI guide for Valley Fever. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🤒",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "126",
+        "name": "Acute Valley Fever",
+        "description": "Comprehensive medical information and AI guide for Acute Valley Fever. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🤒",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "127",
+        "name": "Adenovirus Infection, Ad14",
+        "description": "Comprehensive medical information and AI guide for Adenovirus Infection, Ad14. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🤒",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "128",
+        "name": "Ad14 Adenovirus Infection",
+        "description": "Comprehensive medical information and AI guide for Ad14 Adenovirus Infection. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🤒",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "129",
+        "name": "Killer Cold Virus",
+        "description": "Comprehensive medical information and AI guide for Killer Cold Virus. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "130",
+        "name": "Ad14",
+        "description": "Comprehensive medical information and AI guide for Ad14. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "131",
+        "name": "13 Tips for Parenting a Teen with ADHD",
+        "description": "Comprehensive medical information and AI guide for 13 Tips for Parenting a Teen with ADHD. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "132",
+        "name": "ADD",
+        "description": "Comprehensive medical information and AI guide for ADD. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "133",
+        "name": "ADHD in Children",
+        "description": "Comprehensive medical information and AI guide for ADHD in Children. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "134",
+        "name": "Drug Abuse",
+        "description": "Comprehensive medical information and AI guide for Drug Abuse. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "135",
+        "name": "Addiction",
+        "description": "Comprehensive medical information and AI guide for Addiction. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "136",
+        "name": "Sexual Addiction",
+        "description": "Comprehensive medical information and AI guide for Sexual Addiction. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "137",
+        "name": "Addiction, Sexual",
+        "description": "Comprehensive medical information and AI guide for Addiction, Sexual. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "138",
+        "name": "Pernicious Anemia",
+        "description": "Comprehensive medical information and AI guide for Pernicious Anemia. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "139",
+        "name": "Addison Anemia",
+        "description": "Comprehensive medical information and AI guide for Addison Anemia. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "140",
+        "name": "Addison Disease",
+        "description": "Comprehensive medical information and AI guide for Addison Disease. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "141",
+        "name": "Adenoidectomy Surgical Instructions",
+        "description": "Comprehensive medical information and AI guide for Adenoidectomy Surgical Instructions. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "142",
+        "name": "Adenoids and Tonsils",
+        "description": "Comprehensive medical information and AI guide for Adenoids and Tonsils. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "143",
+        "name": "Adenoids",
+        "description": "Comprehensive medical information and AI guide for Adenoids. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "144",
+        "name": "Gardner Syndrome",
+        "description": "Comprehensive medical information and AI guide for Gardner Syndrome. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "145",
+        "name": "Adenomatous Polyposis Coli",
+        "description": "Comprehensive medical information and AI guide for Adenomatous Polyposis Coli. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "146",
+        "name": "Adenomatous Polyposis of the Colon",
+        "description": "Comprehensive medical information and AI guide for Adenomatous Polyposis of the Colon. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "147",
+        "name": "Uterine Fibroids",
+        "description": "Comprehensive medical information and AI guide for Uterine Fibroids. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "148",
+        "name": "Adenomyosis",
+        "description": "Comprehensive medical information and AI guide for Adenomyosis. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "149",
+        "name": "Exercise Stress Test",
+        "description": "Comprehensive medical information and AI guide for Exercise Stress Test. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "150",
+        "name": "Adenosine",
+        "description": "Comprehensive medical information and AI guide for Adenosine. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "151",
+        "name": "CAD",
+        "description": "Comprehensive medical information and AI guide for CAD. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "152",
+        "name": "Coronary Artery Disease Screening Tests",
+        "description": "Comprehensive medical information and AI guide for Coronary Artery Disease Screening Tests. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "153",
+        "name": "Adenosine Stress Test For Heart Disease",
+        "description": "Comprehensive medical information and AI guide for Adenosine Stress Test For Heart Disease. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "❤️",
+        "category": "Cardiologist",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Cardiologist"
+    },
+    {
+        "id": "154",
+        "name": "Adenovirus Infection",
+        "description": "Comprehensive medical information and AI guide for Adenovirus Infection. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🤒",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "155",
+        "name": "Adult ADHD",
+        "description": "Comprehensive medical information and AI guide for Adult ADHD. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "156",
+        "name": "ADHD in Adults",
+        "description": "Comprehensive medical information and AI guide for ADHD in Adults. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "157",
+        "name": "Parenting a Child With ADHD",
+        "description": "Comprehensive medical information and AI guide for Parenting a Child With ADHD. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "158",
+        "name": "ADHD Parenting Tips",
+        "description": "Comprehensive medical information and AI guide for ADHD Parenting Tips. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "159",
+        "name": "Adhesions After Surgery",
+        "description": "Comprehensive medical information and AI guide for Adhesions After Surgery. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "160",
+        "name": "Frozen Shoulder",
+        "description": "Comprehensive medical information and AI guide for Frozen Shoulder. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "161",
+        "name": "Adhesive Capsulitis",
+        "description": "Comprehensive medical information and AI guide for Adhesive Capsulitis. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "162",
+        "name": "Teenagers",
+        "description": "Comprehensive medical information and AI guide for Teenagers. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "163",
+        "name": "Adolescents",
+        "description": "Comprehensive medical information and AI guide for Adolescents. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "164",
+        "name": "Breastfeeding: Common Breastfeeding Challenges",
+        "description": "Comprehensive medical information and AI guide for Breastfeeding: Common Breastfeeding Challenges. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "165",
+        "name": "Adoption and Inducing Lactation",
+        "description": "Comprehensive medical information and AI guide for Adoption and Inducing Lactation. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "166",
+        "name": "Pheochromocytoma",
+        "description": "Comprehensive medical information and AI guide for Pheochromocytoma. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "167",
+        "name": "Adrenal Gland Tumor",
+        "description": "Comprehensive medical information and AI guide for Adrenal Gland Tumor. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "168",
+        "name": "Adrenal Insufficiency",
+        "description": "Comprehensive medical information and AI guide for Adrenal Insufficiency. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "169",
+        "name": "Adrenal Pheochromocytoma",
+        "description": "Comprehensive medical information and AI guide for Adrenal Pheochromocytoma. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "170",
+        "name": "Adult Acne",
+        "description": "Comprehensive medical information and AI guide for Adult Acne. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧴",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "171",
+        "name": "Psychology",
+        "description": "Comprehensive medical information and AI guide for Psychology. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "172",
+        "name": "Mental Health",
+        "description": "Comprehensive medical information and AI guide for Mental Health. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "173",
+        "name": "Adult Behavior Disorders",
+        "description": "Comprehensive medical information and AI guide for Adult Behavior Disorders. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "174",
+        "name": "Adult Brain Tumors",
+        "description": "Comprehensive medical information and AI guide for Adult Brain Tumors. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧠",
+        "category": "Neurologist",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Neurologist"
+    },
+    {
+        "id": "175",
+        "name": "Diabetes Mellitus",
+        "description": "Comprehensive medical information and AI guide for Diabetes Mellitus. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "Endocrinologist",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Endocrinologist"
+    },
+    {
+        "id": "176",
+        "name": "Adult Onset Diabetes",
+        "description": "Comprehensive medical information and AI guide for Adult Onset Diabetes. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "Endocrinologist",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Endocrinologist"
+    },
+    {
+        "id": "177",
+        "name": "Still's Disease",
+        "description": "Comprehensive medical information and AI guide for Still's Disease. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "178",
+        "name": "Adult Onset Still",
+        "description": "Comprehensive medical information and AI guide for Adult Onset Still. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "179",
+        "name": "Stem Cells",
+        "description": "Comprehensive medical information and AI guide for Stem Cells. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "180",
+        "name": "Adult Stem Cells",
+        "description": "Comprehensive medical information and AI guide for Adult Stem Cells. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "181",
+        "name": "Adult-Onset Asthma",
+        "description": "Comprehensive medical information and AI guide for Adult-Onset Asthma. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "182",
+        "name": "Adults, Abdominal Migraine",
+        "description": "Comprehensive medical information and AI guide for Adults, Abdominal Migraine. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧠",
+        "category": "Neurologist",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Neurologist"
+    },
+    {
+        "id": "183",
+        "name": "Abdominal Migraine Adults",
+        "description": "Comprehensive medical information and AI guide for Abdominal Migraine Adults. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🧠",
+        "category": "Neurologist",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Neurologist"
+    },
+    {
+        "id": "184",
+        "name": "Autism and Communication",
+        "description": "Comprehensive medical information and AI guide for Autism and Communication. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "185",
+        "name": "Adults, Autism",
+        "description": "Comprehensive medical information and AI guide for Adults, Autism. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "186",
+        "name": "Autism Adults",
+        "description": "Comprehensive medical information and AI guide for Autism Adults. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "187",
+        "name": "Jaundice in Adults",
+        "description": "Comprehensive medical information and AI guide for Jaundice in Adults. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "188",
+        "name": "Adults, Jaundice",
+        "description": "Comprehensive medical information and AI guide for Adults, Jaundice. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "189",
+        "name": "Jaundice Adults",
+        "description": "Comprehensive medical information and AI guide for Jaundice Adults. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "190",
+        "name": "Advance Medical Directives",
+        "description": "Comprehensive medical information and AI guide for Advance Medical Directives. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "191",
+        "name": "Alpha-fetoprotein Blood Test",
+        "description": "Comprehensive medical information and AI guide for Alpha-fetoprotein Blood Test. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "Cardiologist",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Cardiologist"
+    },
+    {
+        "id": "192",
+        "name": "AFP Blood Test",
+        "description": "Comprehensive medical information and AI guide for AFP Blood Test. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "Cardiologist",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "Cardiologist"
+    },
+    {
+        "id": "193",
+        "name": "African Salad",
+        "description": "Comprehensive medical information and AI guide for African Salad. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "194",
+        "name": "Hirschsprung Disease",
+        "description": "Comprehensive medical information and AI guide for Hirschsprung Disease. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "195",
+        "name": "Aganglionosis",
+        "description": "Comprehensive medical information and AI guide for Aganglionosis. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "196",
+        "name": "Freckles",
+        "description": "Comprehensive medical information and AI guide for Freckles. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "197",
+        "name": "Age Spots",
+        "description": "Comprehensive medical information and AI guide for Age Spots. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "198",
+        "name": "Macular Degeneration",
+        "description": "Comprehensive medical information and AI guide for Macular Degeneration. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "199",
+        "name": "Age-Related Macular Degeneration",
+        "description": "Comprehensive medical information and AI guide for Age-Related Macular Degeneration. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "200",
+        "name": "Taste Disorders",
+        "description": "Comprehensive medical information and AI guide for Taste Disorders. Learn about symptoms, causes, and recommended treatments.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history, genetics, and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional medical consultation.",
         "specialist": "General Physician"
     }
 ]

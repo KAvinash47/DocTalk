@@ -65,8 +65,16 @@ const HealthGuide = () => {
     };
 
     const filteredDiseases = diseases.filter(d => {
-        const matchesSearch = d.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                             d.symptoms.some(s => s.toLowerCase().includes(searchQuery.toLowerCase()));
+        const name = d.name || "";
+        const symptoms = Array.isArray(d.symptoms) ? d.symptoms.join(" ") : "";
+        const description = d.description || "";
+        
+        const searchLower = searchQuery.toLowerCase();
+        
+        const matchesSearch = name.toLowerCase().includes(searchLower) || 
+                             symptoms.toLowerCase().includes(searchLower) ||
+                             description.toLowerCase().includes(searchLower);
+                             
         const matchesCategory = category === 'All' || d.category === category;
         return matchesSearch && matchesCategory;
     });
