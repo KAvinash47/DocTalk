@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Home, UserRound, Calendar, BookOpen, Settings } from 'lucide-react';
+import { Home, UserRound, Calendar, BookOpen, Bot } from 'lucide-react';
 
 const MobileNavbar = () => {
     const location = useLocation();
@@ -14,9 +14,9 @@ const MobileNavbar = () => {
     const navItems = [
         { id: 1, label: 'Home', icon: <Home size={20} />, path: '/' },
         { id: 2, label: 'Doctors', icon: <UserRound size={20} />, path: '/#doctors' },
-        { id: 3, label: 'Bookings', icon: <Calendar size={20} />, path: '/my-bookings' },
-        { id: 4, label: 'Blogs', icon: <BookOpen size={20} />, path: '/blogs' },
-        { id: 5, label: 'Settings', icon: <Settings size={20} />, path: '/contact' },
+        { id: 3, label: 'AI Bot', icon: <Bot size={20} />, path: '/ai-chat' },
+        { id: 4, label: 'Bookings', icon: <Calendar size={20} />, path: '/my-bookings' },
+        { id: 5, label: 'Blogs', icon: <BookOpen size={20} />, path: '/blogs' },
     ];
 
     const handleNavigation = (path) => {
