@@ -15,8 +15,8 @@ const MobileNavbar = () => {
         { id: 1, label: 'Home', icon: <Home size={20} />, path: '/' },
         { id: 2, label: 'Doctors', icon: <UserRound size={20} />, path: '/#doctors' },
         { id: 3, label: 'AI Bot', icon: <Bot size={20} />, path: '/ai-chat' },
-        { id: 4, label: 'Bookings', icon: <Calendar size={20} />, path: '/my-bookings' },
-        { id: 5, label: 'Blogs', icon: <BookOpen size={20} />, path: '/blogs' },
+        { id: 4, label: 'Tools', icon: <Calculator size={20} />, path: '/health-tools' },
+        { id: 5, label: 'Bookings', icon: <Calendar size={20} />, path: '/my-bookings' },
     ];
 
     const handleNavigation = (path) => {
