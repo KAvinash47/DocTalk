@@ -41,7 +41,7 @@ const Team = () => {
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-blue-600/20 border border-blue-500/30 rounded-full text-blue-400 text-[10px] font-black uppercase tracking-widest mb-6 uppercase">
                         <Users size={14} /> Meet the Squad
                     </div>
-                    <h1 className="text-5xl md:text-7xl font-black tracking-tighter uppercase mb-4 leading-none text-white">Aura Farming</h1>
+                    <h1 className="text-5xl md:text-7xl font-black tracking-tighter uppercase mb-4 leading-none text-white">CompileCrew</h1>
                     <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto font-medium">The collective force behind DocTalk — engineering the future of digital healthcare.</p>
                 </div>
             </div>
@@ -52,13 +52,13 @@ const Team = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
                     {teamMembers.map((member, index) => (
                         <div key={index} className="bg-slate-900/50 backdrop-blur-xl border border-slate-800 rounded-[40px] overflow-hidden group hover:border-blue-500/50 transition-all duration-500">
-                            <div className="h-80 overflow-hidden relative">
+                            <div className="h-[450px] overflow-hidden relative bg-slate-800">
                                 <img 
                                     src={member.image} 
                                     alt={member.name} 
-                                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700" 
+                                    className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" 
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent opacity-60"></div>
+                                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent opacity-40"></div>
                             </div>
                             <div className="p-8 text-center">
                                 <h3 className="text-2xl font-black text-white uppercase tracking-tight mb-1">{member.name}</h3>
@@ -110,12 +110,12 @@ const Team = () => {
                     </div>
                 </div>
 
-                {/* 3. AURA FARMING MISSION */}
+                {/* 3. COMPILECREW MISSION */}
                 <div className="text-center max-w-3xl mx-auto reveal py-12">
                     <div className="w-20 h-1 bg-blue-600 mx-auto mb-8 rounded-full"></div>
-                    <h2 className="text-3xl font-black text-white uppercase tracking-tighter mb-6">Aura Farming Manifesto</h2>
+                    <h2 className="text-3xl font-black text-white uppercase tracking-tighter mb-6">CompileCrew Manifesto</h2>
                     <p className="text-slate-400 text-lg font-medium leading-relaxed italic">
-                        "We believe in the cultivation of technological energy — 'Aura'. Our team focuses on harvesting the best of modern development practices to create impactful, human-centric solutions like DocTalk."
+                        "We believe in the power of collaborative code. Our team focuses on building efficient, human-centric solutions like DocTalk."
                     </p>
                 </div>
 
