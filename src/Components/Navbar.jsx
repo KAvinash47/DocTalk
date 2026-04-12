@@ -67,15 +67,8 @@ const Navbar = () => {
         {/* CENTER LINKS (Desktop Only) */}
         {navLinks}
 
-        {/* ACTIONS (Theme + Login/Logout) */}
+        {/* ACTIONS (Login/Logout) */}
         <div className="flex items-center gap-2 sm:gap-4">
-          <button 
-            onClick={toggleTheme}
-            className="p-2 rounded-full bg-gray-100 dark:bg-slate-800 transition-all hover:bg-gray-200 dark:hover:bg-slate-700"
-          >
-            {theme === 'light' ? <Moon size={18} /> : <Sun size={18} className="text-yellow-400" />}
-          </button>
-
           {!user ? (
             <button
               onClick={() => navigate("/login")}
