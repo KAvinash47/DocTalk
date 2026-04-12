@@ -4,53 +4,65 @@ const path = require('path');
 try {
     const rawData = JSON.parse(fs.readFileSync('backend/raw_diseases.json', 'utf8'));
     
-    // Correct mapping for {"disease": "..."} structure
-    const processed = rawData.slice(0, 200).map((item, index) => {
-        const name = item.disease || "Unknown Condition";
-        const description = `Comprehensive medical information and AI guide for ${name}. Learn about symptoms, causes, and recommended treatments.`;
-        
-        // Dynamic icon assignment based on keywords
-        let icon = "🩺";
+    // Process a larger set and improve mapping
+    // We filter out duplicates and ensure valid names
+    const seenNames = new Set();
+    const processed = [];
+
+    for (let item of rawData) {
+        const name = item.disease || item.title || item.name;
+        if (!name || seenNames.has(name.toLowerCase())) continue;
+        seenNames.add(name.toLowerCase());
+
         const n = name.toLowerCase();
-        if (n.includes("heart") || n.includes("aortic") || n.includes("arrhythmia")) icon = "❤️";
-        else if (n.includes("skin") || n.includes("boil") || n.includes("rash") || n.includes("acne")) icon = "🧴";
-        else if (n.includes("brain") || n.includes("head") || n.includes("migraine")) icon = "🧠";
-        else if (n.includes("fever") || n.includes("flu") || n.includes("infection")) icon = "🤒";
-        else if (n.includes("bone") || n.includes("joint") || n.includes("arthritis") || n.includes("back")) icon = "🦴";
-        else if (n.includes("eye") || n.includes("vision")) icon = "👁️";
-        else if (n.includes("stomach") || n.includes("abdominal") || n.includes("digest") || n.includes("pain")) icon = "🥣";
-        else if (n.includes("liver") || n.includes("hepatitis")) icon = "🧪";
-        else if (n.includes("vaginal") || n.includes("menstrual") || n.includes("uterus")) icon = "🚺";
-
-        // Dynamic specialist assignment
+        let icon = "🩺";
         let specialist = "General Physician";
-        if (n.includes("heart") || n.includes("blood") || n.includes("aortic") || n.includes("arrhythmia")) specialist = "Cardiologist";
-        else if (n.includes("skin") || n.includes("derm") || n.includes("boil")) specialist = "Dermatologist";
-        else if (n.includes("brain") || n.includes("neuro") || n.includes("migraine")) specialist = "Neurologist";
-        else if (n.includes("eye") || n.includes("vision")) specialist = "Ophthalmologist";
-        else if (n.includes("digest") || n.includes("stomach") || n.includes("abdominal") || n.includes("pain")) specialist = "Gastroenterologist";
-        else if (n.includes("sugar") || n.includes("diabet")) specialist = "Endocrinologist";
-        else if (n.includes("liver") || n.includes("hepatitis")) specialist = "Hepatologist";
-        else if (n.includes("vaginal") || n.includes("menstrual") || n.includes("uterus") || n.includes("abortion")) specialist = "Gynecologist";
 
-        return {
-            id: String(index + 1),
+        // Mapping Logic
+        if (n.includes("heart") || n.includes("aortic") || n.includes("cardio")) {
+            icon = "❤️"; specialist = "Cardiologist";
+        } else if (n.includes("skin") || n.includes("derm") || n.includes("acne") || n.includes("rash")) {
+            icon = "🧴"; specialist = "Dermatologist";
+        } else if (n.includes("cancer") || n.includes("tumor") || n.includes("carcinoma")) {
+            icon = "🎗️"; specialist = "Oncologist";
+        } else if (n.includes("brain") || n.includes("neuro") || n.includes("head") || n.includes("migraine")) {
+            icon = "🧠"; specialist = "Neurologist";
+        } else if (n.includes("bone") || n.includes("ortho") || n.includes("joint") || n.includes("arthritis")) {
+            icon = "🦴"; specialist = "Orthopedic";
+        } else if (n.includes("eye") || n.includes("vision") || n.includes("opthalm")) {
+            icon = "👁️"; specialist = "Ophthalmologist";
+        } else if (n.includes("stomach") || n.includes("gast") || n.includes("abdominal") || n.includes("digest")) {
+            icon = "🥣"; specialist = "Gastroenterologist";
+        } else if (n.includes("liver") || n.includes("hepat")) {
+            icon = "🧪"; specialist = "Hepatologist";
+        } else if (n.includes("lung") || n.includes("pulmon") || n.includes("breath") || n.includes("asthma")) {
+            icon = "🫁"; specialist = "Pulmonologist";
+        } else if (n.includes("kidney") || n.includes("renal") || n.includes("nephro")) {
+            icon = "💧"; specialist = "Nephrologist";
+        } else if (n.includes("diabetes") || n.includes("sugar") || n.includes("thyroid")) {
+            icon = "🩸"; specialist = "Endocrinologist";
+        }
+
+        processed.push({
+            id: String(processed.length + 1),
             name: name,
-            description: description,
+            description: `Comprehensive medical information and AI guide for ${name}. Includes specialist recommendations and precautions.`,
             icon: icon,
             category: specialist.split(" ")[0],
-            symptoms: ["Check with CompileXBot for a detailed symptom analysis."],
-            causes: "Varies by patient history, genetics, and environment.",
-            treatment: "Consult a specialist for a personalized treatment plan.",
-            diet: "Maintain a balanced diet suitable for your condition.",
-            exercises: "Light physical activity as recommended by your doctor.",
-            precautions: "Regular monitoring and professional medical consultation.",
+            symptoms: ["Use the AI Checker for detailed analysis."],
+            causes: "Environmental and genetic factors.",
+            treatment: "Medical intervention and lifestyle adjustment.",
+            diet: "Nutritious balanced diet.",
+            exercises: "Regular light physical activity.",
+            precautions: "Early detection and regular checkups.",
             specialist: specialist
-        };
-    });
+        });
+
+        if (processed.length >= 500) break; // Limit to top 500 for performance
+    }
 
     fs.writeFileSync('public/Data/diseases.json', JSON.stringify(processed, null, 4));
-    console.log(`Successfully processed ${processed.length} diseases.`);
+    console.log(`Successfully processed ${processed.length} unique diseases.`);
 } catch (err) {
     console.error("Processing error:", err.message);
 }

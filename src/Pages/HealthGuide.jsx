@@ -119,19 +119,22 @@ const HealthGuide = () => {
                         <p className="text-slate-700 dark:text-slate-200 font-bold text-lg md:text-xl italic">"{healthTip}"</p>
                     </div>
                 </div>
+{/* Search & Filter Bar */}
+<div className="flex flex-col lg:flex-row gap-4 mb-12 reveal">
+    <form 
+        onSubmit={(e) => e.preventDefault()}
+        className="flex-1 relative group"
+    >
+        <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-blue-500 transition-colors" />
+        <input 
+            type="text" 
+            placeholder="Search by disease name or symptom..." 
+            className="w-full pl-14 pr-6 py-4 bg-white dark:bg-slate-900 border border-transparent focus:border-blue-500 rounded-2xl shadow-xl transition-all font-bold text-slate-700 dark:text-white"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+        />
+    </form>
 
-                {/* Search & Filter Bar */}
-                <div className="flex flex-col lg:flex-row gap-4 mb-12 reveal">
-                    <div className="flex-1 relative group">
-                        <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-blue-500 transition-colors" />
-                        <input 
-                            type="text" 
-                            placeholder="Search by disease name or symptom..." 
-                            className="w-full pl-14 pr-6 py-4 bg-white dark:bg-slate-900 border border-transparent focus:border-blue-500 rounded-2xl shadow-xl transition-all font-bold text-slate-700 dark:text-white"
-                            value={searchQuery}
-                            onChange={(e) => setSearchQuery(e.target.value)}
-                        />
-                    </div>
                     <div className="flex items-center gap-3 bg-white dark:bg-slate-900 p-2 rounded-2xl shadow-xl border border-transparent">
                         <Filter className="ml-3 text-slate-400" size={20} />
                         {categories.map(cat => (
