@@ -50,7 +50,7 @@ const Banner = () => {
                 {/* Images - Hidden on very small screens, responsive on medium */}
                 <div className="flex flex-col md:flex-row justify-center gap-4 sm:gap-6 mt-8 md:mt-10 overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=800&auto=format&fit=crop" alt="Doctor" className="w-full md:w-[400px] h-[200px] sm:h-[300px] md:h-auto rounded-2xl shadow-lg object-cover" />
-                    <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=800&auto=format&fit=crop" alt="Medical Professional" className="hidden sm:block w-full md:w-[400px] h-[250px] sm:h-[300px] md:h-auto rounded-2xl shadow-lg object-cover" />
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71f1536783?q=80&w=800&auto=format&fit=crop" alt="Medical Team" className="hidden sm:block w-full md:w-[400px] h-[250px] sm:h-[300px] md:h-auto rounded-2xl shadow-lg object-cover" />
                 </div>
             </div>
         </div>
