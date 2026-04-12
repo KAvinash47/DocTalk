@@ -80,17 +80,26 @@ const HealthTools = () => {
             {/* TOOL MODAL */}
             <AnimatePresence>
                 {activeTool && (
-                    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/90 backdrop-blur-md">
-                        <motion.div initial={{ scale: 0.9, y: 20 }} animate={{ scale: 1, y: 0 }} className="bg-white dark:bg-slate-900 w-full max-w-xl rounded-[40px] overflow-hidden shadow-2xl">
-                            <div className="p-8 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center">
-                                <h3 className="text-2xl font-black text-slate-900 dark:text-white uppercase tracking-tighter">
+                    <motion.div 
+                        initial={{ opacity: 0 }} 
+                        animate={{ opacity: 1 }} 
+                        exit={{ opacity: 0 }} 
+                        className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/90 backdrop-blur-md"
+                    >
+                        <motion.div 
+                            initial={{ scale: 0.9, y: 20 }} 
+                            animate={{ scale: 1, y: 0 }} 
+                            className="bg-white dark:bg-slate-900 w-full max-w-xl rounded-[40px] shadow-2xl flex flex-col max-h-[90vh] overflow-hidden"
+                        >
+                            <div className="p-6 md:p-8 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center shrink-0">
+                                <h3 className="text-xl md:text-2xl font-black text-slate-900 dark:text-white uppercase tracking-tighter">
                                     {tools.find(t => t.id === activeTool).name}
                                 </h3>
                                 <button onClick={() => setActiveTool(null)} className="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors">
                                     <X size={24} />
                                 </button>
                             </div>
-                            <div className="p-10 bg-slate-50 dark:bg-slate-950">
+                            <div className="p-6 md:p-10 bg-slate-50 dark:bg-slate-950 overflow-y-auto custom-scrollbar">
                                 {activeTool === 'bmi' && <BMICalculator />}
                                 {activeTool === 'water' && <WaterCalculator />}
                                 {activeTool === 'calories' && <CalorieEstimator />}
