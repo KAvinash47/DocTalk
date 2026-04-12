@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
-import { Search, Filter, Lightbulb, Bot, X, Activity, ChevronDown } from 'lucide-react';
+import { Search, Filter, Lightbulb, Bot, X, Activity, ChevronDown, Zap } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import useScrollReveal from '../hooks/useScrollReveal';
 import { API_BASE_URL } from '../api/config';
