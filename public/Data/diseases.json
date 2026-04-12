@@ -1,170 +1,1602 @@
 [
     {
         "id": "1",
-        "name": "Hypertension",
-        "description": "High blood pressure that can lead to severe health complications.",
-        "icon": "❤️",
-        "category": "Heart",
-        "symptoms": ["Headaches", "Shortness of breath", "Nosebleeds", "Dizziness"],
-        "causes": "High salt intake, lack of exercise, stress.",
-        "treatment": "Lifestyle changes, medication.",
-        "diet": "Low sodium (DASH diet), leafy greens.",
-        "exercises": "Walking, cycling.",
-        "precautions": "Monitor blood pressure daily, reduce stress.",
-        "specialist": "Cardiologist"
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
     },
     {
         "id": "2",
-        "name": "Type 2 Diabetes",
-        "description": "Chronic condition affecting how the body processes blood sugar.",
-        "icon": "🩸",
-        "category": "Metabolic",
-        "symptoms": ["Thirst", "Urination", "Fatigue", "Blurred vision"],
-        "causes": "Weight, inactivity, genetics.",
-        "treatment": "Diet, exercise, insulin.",
-        "diet": "High fiber, low sugar, whole grains.",
-        "exercises": "Weight lifting, jogging.",
-        "precautions": "Regular glucose checks, foot care.",
-        "specialist": "Endocrinologist"
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
     },
     {
         "id": "3",
-        "name": "Common Cold",
-        "description": "Viral infection of the upper respiratory tract.",
-        "icon": "🤧",
-        "category": "Respiratory",
-        "symptoms": ["Cough", "Runny nose", "Sore throat", "Congestion"],
-        "causes": "Rhinoviruses.",
-        "treatment": "Rest, fluids, OTC meds.",
-        "diet": "Warm fluids, ginger tea.",
-        "exercises": "Light stretching only.",
-        "precautions": "Wash hands, avoid cold weather.",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
         "specialist": "General Physician"
     },
     {
         "id": "4",
-        "name": "Migraine",
-        "description": "Severe throbbing headache usually on one side.",
-        "icon": "🧠",
-        "category": "Neurological",
-        "symptoms": ["Nausea", "Light sensitivity", "Throbbing pain"],
-        "causes": "Stress, hormonal shifts, triggers.",
-        "treatment": "Painkillers, dark room.",
-        "diet": "Avoid caffeine, aged cheese.",
-        "exercises": "Yoga, deep breathing.",
-        "precautions": "Identify triggers, regular sleep.",
-        "specialist": "Neurologist"
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
     },
     {
         "id": "5",
-        "name": "Asthma",
-        "description": "Condition where airways narrow and swell.",
-        "icon": "🫁",
-        "category": "Respiratory",
-        "symptoms": ["Wheezing", "Chest tightness", "Shortness of breath"],
-        "causes": "Allergens, pollution, exercise.",
-        "treatment": "Inhalers, steroids.",
-        "diet": "Vitamin D rich foods, anti-inflammatory.",
-        "exercises": "Swimming, controlled breathing.",
-        "precautions": "Avoid smoke, carry inhaler.",
-        "specialist": "Pulmonologist"
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
     },
     {
         "id": "6",
-        "name": "Dengue Fever",
-        "description": "Mosquito-borne viral disease causing high fever.",
-        "icon": "🦟",
-        "category": "Infectious",
-        "symptoms": ["High fever", "Joint pain", "Rash", "Eye pain"],
-        "causes": "Aedes mosquito bite.",
-        "treatment": "Hydration, paracetamol (no aspirin).",
-        "diet": "Papaya leaf juice, high fluids.",
-        "exercises": "Complete bed rest.",
-        "precautions": "Use mosquito nets, remove standing water.",
-        "specialist": "Infectious Disease Specialist"
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
     },
     {
         "id": "7",
-        "name": "Acne",
-        "description": "Skin condition that occurs when hair follicles plug with oil.",
-        "icon": "🧴",
-        "category": "Skin",
-        "symptoms": ["Pimples", "Blackheads", "Redness"],
-        "causes": "Excess oil, bacteria, hormones.",
-        "treatment": "Salicylic acid, retinoids.",
-        "diet": "Low glycemic index, avoid dairy.",
-        "exercises": "Regular activity (wash face after).",
-        "precautions": "Don't touch face, use non-comedogenic products.",
-        "specialist": "Dermatologist"
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
     },
     {
         "id": "8",
-        "name": "Gastritis",
-        "description": "Inflammation of the stomach lining.",
-        "icon": "🥣",
-        "category": "Digestion",
-        "symptoms": ["Stomach pain", "Bloating", "Nausea", "Indigestion"],
-        "causes": "H. pylori, spicy food, alcohol.",
-        "treatment": "Antacids, antibiotics.",
-        "diet": "Bland foods, avoid spicy/acidic.",
-        "exercises": "Mild walking.",
-        "precautions": "Small meals, limit coffee/alcohol.",
-        "specialist": "Gastroenterologist"
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
     },
     {
         "id": "9",
-        "name": "Insomnia",
-        "description": "Persistent problems falling and staying asleep.",
-        "icon": "🌙",
-        "category": "Mental Health",
-        "symptoms": ["Difficulty sleeping", "Daytime tiredness", "Irritability"],
-        "causes": "Stress, anxiety, irregular schedule.",
-        "treatment": "CBT, sleep hygiene.",
-        "diet": "Chamomile tea, avoid heavy night meals.",
-        "exercises": "Early morning sunlight exposure.",
-        "precautions": "No screens before bed, consistent routine.",
-        "specialist": "Sleep Specialist / Psychiatrist"
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
     },
     {
         "id": "10",
-        "name": "Anemia",
-        "description": "Lack of enough healthy red blood cells.",
-        "icon": "🩸",
-        "category": "Blood",
-        "symptoms": ["Fatigue", "Pale skin", "Cold hands/feet", "Weakness"],
-        "causes": "Iron deficiency, blood loss.",
-        "treatment": "Iron supplements, vitamin B12.",
-        "diet": "Spinach, red meat, legumes.",
-        "exercises": "Light aerobic activity.",
-        "precautions": "Regular blood tests.",
-        "specialist": "Hematologist"
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
     },
     {
         "id": "11",
-        "name": "Arthritis",
-        "description": "Inflammation of one or more joints.",
-        "icon": "🦴",
-        "category": "Orthopedic",
-        "symptoms": ["Joint pain", "Stiffness", "Swelling", "Reduced range of motion"],
-        "causes": "Wear and tear, immune system attacks.",
-        "treatment": "Physical therapy, anti-inflammatories.",
-        "diet": "Omega-3 rich (Fish oil), turmeric.",
-        "exercises": "Low-impact aerobics, yoga.",
-        "precautions": "Maintain healthy weight, avoid heavy lifting.",
-        "specialist": "Rheumatologist"
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
     },
     {
         "id": "12",
-        "name": "Conjunctivitis (Pink Eye)",
-        "description": "Inflammation or infection of the outer membrane of the eyeball.",
-        "icon": "👁️",
-        "category": "Eyes",
-        "symptoms": ["Redness", "Itchiness", "Gritty feeling", "Discharge"],
-        "causes": "Viruses, bacteria, allergies.",
-        "treatment": "Eye drops, warm compress.",
-        "diet": "Vitamin A rich foods.",
-        "exercises": "None needed; avoid strain.",
-        "precautions": "Wash hands, don't share towels/pillows.",
-        "specialist": "Ophthalmologist"
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "13",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "14",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "15",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "16",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "17",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "18",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "19",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "20",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "21",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "22",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "23",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "24",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "25",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "26",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "27",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "28",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "29",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "30",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "31",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "32",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "33",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "34",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "35",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "36",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "37",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "38",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "39",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "40",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "41",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "42",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "43",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "44",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "45",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "46",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "47",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "48",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "49",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "50",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "51",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "52",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "53",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "54",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "55",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "56",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "57",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "58",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "59",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "60",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "61",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "62",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "63",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "64",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "65",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "66",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "67",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "68",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "69",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "70",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "71",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "72",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "73",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "74",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "75",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "76",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "77",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "78",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "79",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "80",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "81",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "82",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "83",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "84",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "85",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "86",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "87",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "88",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "89",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "90",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "91",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "92",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "93",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "94",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "95",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "96",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "97",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "98",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "99",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "100",
+        "name": "Unknown Condition",
+        "description": "Medical information and guide for Unknown Condition.",
+        "icon": "🩺",
+        "category": "General",
+        "symptoms": [
+            "Check with CompileXBot for a detailed symptom analysis."
+        ],
+        "causes": "Varies by patient history and environment.",
+        "treatment": "Consult a specialist for a personalized treatment plan.",
+        "diet": "Maintain a balanced diet suitable for your condition.",
+        "exercises": "Light physical activity as recommended by your doctor.",
+        "precautions": "Regular monitoring and professional consultation.",
+        "specialist": "General Physician"
     }
 ]
