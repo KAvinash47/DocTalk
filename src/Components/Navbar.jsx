@@ -30,6 +30,7 @@ const Navbar = () => {
       {user?.role === "doctor" && (
         <NavLink to="/dashboard" className={linkStyle}>Dashboard</NavLink>
       )}
+      <NavLink to="/health-guide" className={linkStyle}>Health Guide</NavLink>
       <NavLink to="/ai-chat" className={linkStyle}>
         <span className="flex items-center gap-1.5">
           <div className="w-1.5 h-1.5 bg-blue-500 rounded-full animate-pulse"></div>

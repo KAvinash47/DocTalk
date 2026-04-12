@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "name": "Hypertension",
+        "description": "A condition in which the force of the blood against the artery walls is too high.",
+        "icon": "❤️",
+        "category": "Heart",
+        "symptoms": ["Headaches", "Shortness of breath", "Nosebleeds", "Flushing", "Dizziness"],
+        "causes": "High salt intake, lack of physical activity, stress, genetics.",
+        "treatment": "Lifestyle changes, medication, stress management.",
+        "diet": "Low sodium, fruits, vegetables, whole grains.",
+        "exercises": "Walking, swimming, yoga.",
+        "precautions": "Regular monitoring, limit alcohol, quit smoking.",
+        "specialist": "Cardiologist"
+    },
+    {
+        "id": "2",
+        "name": "Type 2 Diabetes",
+        "description": "A chronic condition that affects the way the body processes blood sugar.",
+        "icon": "🩸",
+        "category": "Metabolic",
+        "symptoms": ["Increased thirst", "Frequent urination", "Hunger", "Fatigue", "Blurred vision"],
+        "causes": "Insulin resistance, excess body weight, genetics.",
+        "treatment": "Healthy eating, regular exercise, insulin therapy, medication.",
+        "diet": "Low sugar, high fiber, protein-rich foods.",
+        "exercises": "Strength training, aerobic exercise.",
+        "precautions": "Monitor blood sugar, foot care, regular check-ups.",
+        "specialist": "Endocrinologist"
+    },
+    {
+        "id": "3",
+        "name": "Common Cold",
+        "description": "A viral infection of your nose and throat.",
+        "icon": "🤧",
+        "category": "General",
+        "symptoms": ["Runny nose", "Sore throat", "Cough", "Congestion", "Mild body aches"],
+        "causes": "Rhinoviruses, close contact with infected people.",
+        "treatment": "Rest, hydration, over-the-counter cold remedies.",
+        "diet": "Warm fluids, soups, Vitamin C rich fruits.",
+        "exercises": "Rest is recommended; light stretching only.",
+        "precautions": "Hand washing, avoid close contact, stay warm.",
+        "specialist": "General Physician"
+    },
+    {
+        "id": "4",
+        "name": "Migraine",
+        "description": "A headache that can cause severe throbbing pain or a pulsing sensation.",
+        "icon": "🧠",
+        "category": "Brain",
+        "symptoms": ["Severe pain", "Nausea", "Sensitivity to light", "Visual disturbances"],
+        "causes": "Stress, hormonal changes, certain foods, sensory stimuli.",
+        "treatment": "Pain relievers, preventative medications, dark quiet room.",
+        "diet": "Avoid caffeine, alcohol, and aged cheeses.",
+        "exercises": "Regular mild aerobic exercise.",
+        "precautions": "Identify triggers, regular sleep patterns.",
+        "specialist": "Neurologist"
+    }
+]

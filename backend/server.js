@@ -21,9 +21,17 @@ const doctorsPath = path.join(__dirname, '../public/Data/doctors.json');
 let doctors = [];
 try {
   doctors = JSON.parse(fs.readFileSync(doctorsPath, 'utf8'));
-  console.log("Doctors loaded:", doctors.length);
 } catch (err) {
   console.error("Error loading doctors:", err.message);
+}
+
+// ✅ Load diseases.json
+const diseasesPath = path.join(__dirname, '../public/Data/diseases.json');
+let diseases = [];
+try {
+  diseases = JSON.parse(fs.readFileSync(diseasesPath, 'utf8'));
+} catch (err) {
+  console.error("Error loading diseases:", err.message);
 }
 
 // In-memory storage
@@ -48,6 +56,15 @@ app.get('/api/doctors/:id', (req, res) => {
   const doctor = doctors.find(d => String(d.id) === String(req.params.id));
   if (!doctor) return res.status(404).json({ message: "Doctor not found" });
   res.json(doctor);
+});
+
+// ✅ GET diseases
+app.get('/api/diseases', (req, res) => res.json(diseases));
+
+app.get('/api/diseases/:id', (req, res) => {
+    const disease = diseases.find(d => String(d.id) === String(req.params.id));
+    if (!disease) return res.status(404).json({ message: "Disease not found" });
+    res.json(disease);
 });
 
 app.get("/api/bookings", (req, res) => res.json(bookings));
@@ -83,21 +100,13 @@ app.get('/api/bookings/doctor/:doctorId', (req, res) => {
   res.json(bookings.filter(b => String(b.doctorId) === String(doctorId)));
 });
 
-// --- OPENROUTER AI INTEGRATION (DEEPSEEK V3 ONLY) ---
+// --- OPENROUTER AI INTEGRATION ---
 
-const callOpenRouter = async (message, doctorName, specialty) => {
+const callOpenRouter = async (message, systemPrompt) => {
     const API_KEY = process.env.OPENROUTER_API_KEY;
     if (!API_KEY) return "AI Key not configured on server.";
 
-    // Using strictly DeepSeek V3 (deepseek/deepseek-chat)
-    const model = "deepseek/deepseek-chat";
-    
-    const systemPrompt = doctorName 
-      ? `You are ${doctorName}, a professional ${specialty}. Give safe, clear medical guidance. Keep it brief. Always mention you are an AI assistant representing ${doctorName}.`
-      : "You are a professional doctor AI assistant. Give safe medical advice. Always include a disclaimer.";
-
     try {
-        console.log(`Requesting DeepSeek V3...`);
         const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
           method: "POST",
           headers: {
@@ -106,7 +115,7 @@ const callOpenRouter = async (message, doctorName, specialty) => {
             "X-Title": "DocTalk"
           },
           body: JSON.stringify({
-            model: model,
+            model: "deepseek/deepseek-chat",
             messages: [
               { role: "system", content: systemPrompt },
               { role: "user", content: message }
@@ -115,31 +124,60 @@ const callOpenRouter = async (message, doctorName, specialty) => {
         });
 
         const data = await response.json();
-        
-        if (data.choices && data.choices[0]?.message?.content) {
-            console.log(`✅ Success with DeepSeek V3`);
-            return data.choices[0].message.content;
-        }
-        
-        const errorMsg = data.error?.message || "Model returned empty response.";
-        console.error(`❌ DeepSeek V3 failed:`, errorMsg);
-        return `AI Service Error: ${errorMsg}`;
+        return data.choices?.[0]?.message?.content || "No response";
     } catch (err) {
-        console.error(`❌ Connection error: ${err.message}`);
-        return "AI Doctor currently unavailable.";
+        console.error("OpenRouter error:", err);
+        return "AI Service Error";
     }
 };
 
 app.post('/api/ai-chat', async (req, res) => {
-  const { message, doctorName, specialty } = req.body;
-  const reply = await callOpenRouter(message, doctorName, specialty);
-  res.json({ reply });
+  try {
+    const { message, doctorName, specialty } = req.body;
+    const systemPrompt = doctorName 
+      ? `You are ${doctorName}, a professional ${specialty}. Give safe, clear advice. Short responses. Always mention you are an AI assistant representing ${doctorName}.`
+      : "You are a professional doctor AI assistant. Give safe advice. Always include a disclaimer.";
+    const reply = await callOpenRouter(message, systemPrompt);
+    res.json({ reply });
+  } catch (err) {
+    res.json({ reply: "AI Doctor unavailable" });
+  }
+});
+
+// ✅ NEW: AI Symptom Checker Route
+app.post('/api/ai-check', async (req, res) => {
+    const { symptoms, diseaseName } = req.body;
+    const systemPrompt = `You are a professional medical assistant AI. 
+    Based on the symptoms provided, estimate if the user might have ${diseaseName}.
+    
+    IMPORTANT:
+    - Do not give strict diagnosis
+    - Always suggest consulting a doctor
+    - Keep language simple and human-friendly
+    
+    Respond STRICTLY in the following format:
+    1. Match percentage: [X%]
+    2. Severity: [Low/Medium/High]
+    3. Possible explanation: [Short description]
+    4. Immediate precautions: [List]
+    5. When to see a doctor: [Advice]`;
+
+    try {
+        const reply = await callOpenRouter(`User symptoms: ${symptoms}`, systemPrompt);
+        res.json({ reply });
+    } catch (err) {
+        res.status(500).json({ reply: "Symptom checker is currently unavailable." });
+    }
 });
 
 app.post('/api/ai-doctor', async (req, res) => {
-    const { message } = req.body;
-    const reply = await callOpenRouter(message);
-    res.json({ response: reply });
+    try {
+      const { message } = req.body;
+      const reply = await callOpenRouter(message, "You are a professional doctor AI assistant. Give safe advice.");
+      res.json({ response: reply });
+    } catch (err) {
+      res.json({ response: "AI Doctor unavailable" });
+    }
 });
 
 const PORT = process.env.PORT || 5001;
