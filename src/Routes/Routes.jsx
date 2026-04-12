@@ -2,19 +2,19 @@ import { createBrowserRouter } from 'react-router-dom';
 import { lazy } from 'react';
 import MainLayout from '../Components/Layout/MainLayout';
 import Error from '../Pages/Error';
+import ProtectedRoute from './ProtectedRoute';
 
 // Lazy load components
 const Home = lazy(() => import('../Pages/Home'));
 const MyBookings = lazy(() => import('../Pages/MyBookings'));
 const DoctorDetails = lazy(() => import('../Pages/DoctorDetails'));
-const Contact = lazy(() => import('../Pages/Contact'));   // 👈 ADD THIS
+const Team = lazy(() => import('../Pages/Team'));
 const Login = lazy(() => import('../Pages/Login'));
 const Dashboard = lazy(() => import('../Pages/Dashboard'));
 const AIChat = lazy(() => import('../Pages/AIChat'));
 const HealthGuide = lazy(() => import('../Pages/HealthGuide'));
 const HealthTools = lazy(() => import('../Pages/HealthTools'));
 const DiseaseDetails = lazy(() => import('../Pages/DiseaseDetails'));
-import ProtectedRoute from './ProtectedRoute';
 
 const router = createBrowserRouter([
   {
@@ -49,7 +49,6 @@ const router = createBrowserRouter([
         </ProtectedRoute>
         ),
       },
-
       {
         path: '/',  
         Component: Home,
@@ -66,7 +65,6 @@ const router = createBrowserRouter([
         path: '/team',
         Component: Team,
       },
-      
     ],
   },
   {
@@ -75,4 +73,4 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default router;ult router;
+export default router;
