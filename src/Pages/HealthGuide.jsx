@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
-import { Search, Filter, Lightbulb, ArrowRight, HeartPulse } from 'lucide-react';
+import { Search, Filter, Lightbulb, ArrowRight, Bot, X, Activity, ShieldCheck } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 import useScrollReveal from '../hooks/useScrollReveal';
 import { API_BASE_URL } from '../api/config';
 
@@ -11,6 +12,12 @@ const HealthGuide = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const [category, setCategory] = useState('All');
     const [healthTip, setHealthTip] = useState('');
+    
+    // AI Checker Modal State
+    const [isCheckerOpen, setIsCheckerOpen] = useState(false);
+    const [userSymptoms, setUserSymptoms] = useState('');
+    const [aiResponse, setAiResponse] = useState(null);
+    const [isChecking, setIsChecking] = useState(false);
 
     useScrollReveal();
 
@@ -36,6 +43,26 @@ const HealthGuide = () => {
                 setLoading(false);
             });
     }, []);
+
+    const handleGeneralAICheck = async () => {
+        if (!userSymptoms.trim()) return;
+        setIsChecking(true);
+        setAiResponse(null);
+
+        try {
+            const res = await fetch(`${API_BASE_URL}/api/ai-check`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ symptoms: userSymptoms })
+            });
+            const data = await res.json();
+            setAiResponse(data.reply);
+        } catch (error) {
+            setAiResponse("Symptom checker is currently unavailable.");
+        } finally {
+            setIsChecking(false);
+        }
+    };
 
     const filteredDiseases = diseases.filter(d => {
         const matchesSearch = d.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
@@ -64,6 +91,12 @@ const HealthGuide = () => {
                     <p className="text-blue-100 max-w-2xl mx-auto font-bold uppercase tracking-widest text-[10px] md:text-xs leading-loose">
                         Your intelligent companion for medical knowledge and symptom awareness
                     </p>
+                    <button 
+                        onClick={() => setIsCheckerOpen(true)}
+                        className="mt-8 px-8 py-3 bg-white text-blue-600 rounded-full font-black uppercase text-xs tracking-widest hover:scale-105 transition-all shadow-2xl flex items-center gap-2 mx-auto"
+                    >
+                        <Bot size={18} /> Start General AI Check
+                    </button>
                 </div>
             </div>
 
@@ -130,15 +163,76 @@ const HealthGuide = () => {
                         </div>
                     ))}
                 </div>
-
-                {filteredDiseases.length === 0 && (
-                    <div className="text-center py-20 bg-white dark:bg-slate-900 rounded-[40px] shadow-xl border-2 border-dashed border-slate-200 dark:border-slate-800">
-                        <div className="text-6xl mb-6">🔍</div>
-                        <h3 className="text-2xl font-black text-slate-900 dark:text-white mb-2">No Results Found</h3>
-                        <p className="text-slate-500 font-medium">Try different keywords or browse all categories.</p>
-                    </div>
-                )}
             </div>
+
+            {/* AI Checker Modal */}
+            <AnimatePresence>
+                {isCheckerOpen && (
+                    <motion.div 
+                        initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+                        className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md"
+                    >
+                        <motion.div 
+                            initial={{ scale: 0.9, y: 20 }} animate={{ scale: 1, y: 0 }}
+                            className="bg-white dark:bg-slate-900 w-full max-w-2xl rounded-[40px] overflow-hidden shadow-2xl flex flex-col h-[600px]"
+                        >
+                            <div className="p-8 bg-blue-600 text-white flex justify-between items-center shrink-0">
+                                <div className="flex items-center gap-4">
+                                    <div className="p-2 bg-white/20 rounded-xl"><Bot size={24}/></div>
+                                    <div>
+                                        <h3 className="font-black text-xl leading-none uppercase tracking-tight">General Symptom Checker</h3>
+                                        <p className="text-[10px] opacity-80 font-bold uppercase mt-1 tracking-widest">Powered by CompileXBot</p>
+                                    </div>
+                                </div>
+                                <button onClick={() => {setIsCheckerOpen(false); setAiResponse(null); setUserSymptoms('');}} className="p-2 hover:bg-white/10 rounded-full"><X size={24} /></button>
+                            </div>
+
+                            <div className="flex-1 overflow-y-auto p-8 space-y-6 bg-slate-50 dark:bg-slate-950 custom-scrollbar">
+                                {!aiResponse ? (
+                                    <div className="space-y-6 text-center py-10">
+                                        <div className="w-20 h-20 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                                            <Activity className="text-blue-600" size={40} />
+                                        </div>
+                                        <h4 className="text-xl font-black text-slate-900 dark:text-white">Describe how you feel</h4>
+                                        <p className="text-slate-500 dark:text-slate-400 font-medium">Explain your symptoms in detail for an accurate AI assessment.</p>
+                                        <textarea 
+                                            value={userSymptoms}
+                                            onChange={(e) => setUserSymptoms(e.target.value)}
+                                            placeholder="Example: I have been feeling sharp chest pain and dizziness since morning..."
+                                            className="w-full h-32 p-6 bg-white dark:bg-slate-900 border-2 border-slate-100 dark:border-slate-800 rounded-3xl focus:outline-none focus:border-blue-500 font-bold text-slate-700 dark:text-white shadow-inner transition-all"
+                                        />
+                                        <button 
+                                            onClick={handleGeneralAICheck}
+                                            disabled={isChecking || !userSymptoms.trim()}
+                                            className="px-12 py-4 bg-blue-600 text-white rounded-2xl font-black uppercase text-xs tracking-widest hover:scale-105 disabled:opacity-50 disabled:scale-100 transition-all shadow-xl shadow-blue-500/20"
+                                        >
+                                            {isChecking ? "AI is Analyzing..." : "Check Symptoms Now"}
+                                        </button>
+                                    </div>
+                                ) : (
+                                    <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-8">
+                                        <div className="bg-white dark:bg-slate-900 rounded-3xl p-8 border border-slate-100 dark:border-slate-800 shadow-xl whitespace-pre-line font-medium text-slate-700 dark:text-slate-300 leading-relaxed">
+                                            <div className="flex items-center gap-3 mb-6">
+                                                <ShieldCheck className="text-green-500" size={24} />
+                                                <h4 className="font-black text-slate-900 dark:text-white uppercase tracking-tight">AI Assessment Results</h4>
+                                            </div>
+                                            {aiResponse}
+                                        </div>
+                                        <div className="flex flex-col md:flex-row gap-4">
+                                            <button onClick={() => setAiResponse(null)} className="flex-1 py-4 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-2xl font-black uppercase text-xs tracking-widest hover:bg-slate-200 transition-all">Retry Check</button>
+                                            <button onClick={() => navigate('/')} className="flex-1 py-4 bg-blue-600 text-white rounded-2xl font-black uppercase text-xs tracking-widest shadow-lg shadow-blue-500/20 hover:scale-105 transition-all">Find a Specialist</button>
+                                        </div>
+                                    </motion.div>
+                                )}
+                            </div>
+                            
+                            <div className="p-6 bg-white dark:bg-slate-900 border-t dark:border-slate-800 text-center shrink-0">
+                                <p className="text-[9px] text-slate-400 font-black uppercase tracking-[0.2em]">⚠️ This is an experimental AI feature. Consult a real doctor for medical decisions.</p>
+                            </div>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 };

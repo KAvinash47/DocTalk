@@ -144,23 +144,34 @@ app.post('/api/ai-chat', async (req, res) => {
   }
 });
 
-// ✅ NEW: AI Symptom Checker Route
+// ✅ AI Symptom Checker Route (with Infinite Fallback)
 app.post('/api/ai-check', async (req, res) => {
     const { symptoms, diseaseName } = req.body;
-    const systemPrompt = `You are a professional medical assistant AI. 
-    Based on the symptoms provided, estimate if the user might have ${diseaseName}.
     
-    IMPORTANT:
-    - Do not give strict diagnosis
-    - Always suggest consulting a doctor
-    - Keep language simple and human-friendly
-    
-    Respond STRICTLY in the following format:
-    1. Match percentage: [X%]
-    2. Severity: [Low/Medium/High]
-    3. Possible explanation: [Short description]
-    4. Immediate precautions: [List]
-    5. When to see a doctor: [Advice]`;
+    // Custom prompt based on whether a specific disease was clicked or general symptoms provided
+    const systemPrompt = diseaseName 
+    ? `You are a professional medical assistant AI. 
+       Analyze these symptoms: ${symptoms}. 
+       Estimate how well they match ${diseaseName}.
+       
+       STRICT FORMAT:
+       1. Match percentage: [X%]
+       2. Severity: [Low/Medium/High]
+       3. Possible explanation: [Short description]
+       4. Immediate precautions: [List]
+       5. When to see a doctor: [Advice]`
+    : `You are a professional medical assistant AI. 
+       Analyze these user symptoms: ${symptoms}.
+       
+       STRICT FORMAT:
+       1. Potential condition: [Name]
+       2. Match percentage: [X%]
+       3. Severity: [Low/Medium/High]
+       4. Suggested Specialist: [Type, e.g., Dermatologist]
+       5. Immediate precautions: [List]
+       6. When to see a doctor: [Advice]
+       
+       Keep it simple and always include a safety disclaimer.`;
 
     try {
         const reply = await callOpenRouter(`User symptoms: ${symptoms}`, systemPrompt);
