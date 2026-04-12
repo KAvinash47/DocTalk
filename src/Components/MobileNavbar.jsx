@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Home, UserRound, Calendar, BookOpen, Bot } from 'lucide-react';
+import { Home, UserRound, Calendar, BookOpen, Bot, Calculator } from 'lucide-react';
 
 const MobileNavbar = () => {
     const location = useLocation();
