@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
     Calculator, Droplets, Flame, Heart, 
@@ -15,7 +15,14 @@ import HealthScoreGenerator from '../Components/Tools/HealthScoreGenerator';
 
 const HealthTools = () => {
     const [activeTool, setActiveTool] = useState(null);
+    const scrollContainerRef = useRef(null);
     useScrollReveal();
+
+    useEffect(() => {
+        if (activeTool && scrollContainerRef.current) {
+            scrollContainerRef.current.scrollTop = 0;
+        }
+    }, [activeTool]);
 
     const tools = [
         { id: 'bmi', name: 'BMI Calculator', icon: <Calculator />, color: 'bg-blue-500', desc: 'Body Mass Index assessment' },
@@ -99,7 +106,7 @@ const HealthTools = () => {
                                     <X size={24} />
                                 </button>
                             </div>
-                            <div className="p-6 md:p-10 bg-slate-50 dark:bg-slate-950 overflow-y-auto custom-scrollbar">
+                            <div ref={scrollContainerRef} className="p-6 md:p-10 bg-slate-50 dark:bg-slate-950 overflow-y-auto custom-scrollbar">
                                 {activeTool === 'bmi' && <BMICalculator />}
                                 {activeTool === 'water' && <WaterCalculator />}
                                 {activeTool === 'calories' && <CalorieEstimator />}

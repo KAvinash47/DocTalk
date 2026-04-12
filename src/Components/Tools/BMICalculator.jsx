@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
 const BMICalculator = () => {
@@ -6,6 +6,13 @@ const BMICalculator = () => {
     const [height, setHeight] = useState('');
     const [bmi, setBmi] = useState(null);
     const [status, setStatus] = useState('');
+    const inputRef = useRef(null);
+
+    useEffect(() => {
+        if (inputRef.current) {
+            inputRef.current.focus();
+        }
+    }, []);
 
     const calculateBMI = () => {
         if (!weight || !height) return;
@@ -25,6 +32,7 @@ const BMICalculator = () => {
                 <div className="space-y-2">
                     <label className="text-xs font-black uppercase tracking-widest text-slate-400">Weight (kg)</label>
                     <input 
+                        ref={inputRef}
                         type="number" 
                         value={weight} 
                         onChange={(e) => setWeight(e.target.value)}
