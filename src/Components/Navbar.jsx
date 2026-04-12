@@ -38,8 +38,6 @@ const Navbar = () => {
           AI Assistant
         </span>
       </NavLink>
-      <NavLink to="/blogs" className={linkStyle}>Blogs</NavLink>
-
       <NavLink to="/contact" className={linkStyle}>Contact</NavLink>
     </div>
   );

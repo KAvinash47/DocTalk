@@ -6,7 +6,6 @@ import Error from '../Pages/Error';
 // Lazy load components
 const Home = lazy(() => import('../Pages/Home'));
 const MyBookings = lazy(() => import('../Pages/MyBookings'));
-const Blogs = lazy(() => import('../Pages/Blogs'));
 const DoctorDetails = lazy(() => import('../Pages/DoctorDetails'));
 const Contact = lazy(() => import('../Pages/Contact'));   // 👈 ADD THIS
 const Login = lazy(() => import('../Pages/Login'));
@@ -62,10 +61,6 @@ const router = createBrowserRouter([
       {
         path: '/my-bookings',
         Component: MyBookings,
-      },
-      {
-        path: '/blogs',
-        Component: Blogs,
       },
       {
         path: '/contact',        // 👈 ADD THIS BLOCK
