@@ -50,7 +50,7 @@ const Banner = () => {
                 {/* Images - Hidden on very small screens, responsive on medium */}
                 <div className="flex flex-col md:flex-row justify-center gap-4 sm:gap-6 mt-8 md:mt-10 overflow-hidden">
                     <img src="https://i.postimg.cc/xTdKtT2j/banner-img-1.png" alt="Doctor" className="w-full md:w-[400px] h-[200px] sm:h-[300px] md:h-auto rounded-2xl shadow-lg object-cover" />
-                    <img src="https://i.postimg.cc/vHrsShYz/istockphoto-1342134434-1024x1024.jpg" alt="Medical Professional" className="hidden sm:block w-full md:w-[400px] h-[250px] sm:h-[300px] md:h-auto rounded-2xl shadow-lg object-cover" />
+                    <img src="https://i.postimg.cc/8z7R9R4Z/female-doctor-hospital.jpg" alt="Medical Professional" className="hidden sm:block w-full md:w-[400px] h-[250px] sm:h-[300px] md:h-auto rounded-2xl shadow-lg object-cover" />
                 </div>
             </div>
         </div>
