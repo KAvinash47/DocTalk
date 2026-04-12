@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, ArrowLeft, Bot, User, Sparkles, Shield } from 'lucide-react';
 import { API_BASE_URL } from '../api/config';
+import ReactMarkdown from 'react-markdown';
 
 const AIChat = () => {
     const location = useLocation();
