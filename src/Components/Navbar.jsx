@@ -38,7 +38,7 @@ const Navbar = () => {
           AI Assistant
         </span>
       </NavLink>
-      <NavLink to="/contact" className={linkStyle}>Contact</NavLink>
+      <NavLink to="/team" className={linkStyle}>Our Team</NavLink>
     </div>
   );
 

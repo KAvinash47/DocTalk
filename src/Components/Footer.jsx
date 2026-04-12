@@ -51,7 +51,7 @@ const Footer = () => {
                         <h4 className="text-slate-900 dark:text-white font-black uppercase tracking-widest text-xs mb-6">Explore</h4>
                         <ul className="space-y-2">
                             <li><NavLink to="/" className={footerLinkStyle}>Home Page</NavLink></li>
-                            <li><NavLink to="/contact" className={footerLinkStyle}>Support Center</NavLink></li>
+                            <li><NavLink to="/team" className={footerLinkStyle}>Meet the Team</NavLink></li>
                             <li><NavLink to="/login" className={footerLinkStyle}>Member Login</NavLink></li>
                         </ul>
                     </div>

@@ -63,8 +63,8 @@ const router = createBrowserRouter([
         Component: MyBookings,
       },
       {
-        path: '/contact',        // 👈 ADD THIS BLOCK
-        Component: Contact,
+        path: '/team',
+        Component: Team,
       },
       
     ],
@@ -75,4 +75,4 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default router;
+export default router;ult router;
