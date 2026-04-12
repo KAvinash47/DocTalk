@@ -27,16 +27,16 @@ const HealthTools = () => {
     return (
         <div className="min-h-screen bg-slate-50 dark:bg-slate-950 transition-colors duration-300 pb-20">
             {/* Hero Header */}
-            <div className="bg-slate-900 text-white pt-24 pb-32 px-4 relative overflow-hidden">
+            <div className="bg-slate-100 dark:bg-slate-900 text-slate-900 dark:text-white pt-24 pb-32 px-4 relative overflow-hidden border-b border-slate-200 dark:border-slate-800">
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600 rounded-full blur-[120px]"></div>
                 </div>
                 <div className="max-w-6xl mx-auto relative z-10 text-center animate-fade-up">
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-blue-600/20 border border-blue-500/30 rounded-full text-blue-400 text-[10px] font-black uppercase tracking-widest mb-6">
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-blue-600/10 dark:bg-blue-600/20 border border-blue-500/30 rounded-full text-blue-600 dark:text-blue-400 text-[10px] font-black uppercase tracking-widest mb-6">
                         <BrainCircuit size={14} /> Intelligence Tools
                     </div>
-                    <h1 className="text-5xl md:text-7xl font-black tracking-tighter uppercase mb-4 leading-none">Health Analyzers</h1>
-                    <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto font-medium">Precision tools to calculate, track, and optimize your physical stability.</p>
+                    <h1 className="text-5xl md:text-7xl font-black tracking-tighter uppercase mb-4 leading-none text-slate-900 dark:text-white">Health Analyzers</h1>
+                    <p className="text-slate-600 dark:text-slate-400 text-lg md:text-xl max-w-2xl mx-auto font-medium">Precision tools to calculate, track, and optimize your physical stability.</p>
                 </div>
             </div>
 

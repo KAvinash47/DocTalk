@@ -111,7 +111,7 @@ const HealthGuide = () => {
             <div className="bg-gradient-to-br from-blue-600 to-purple-700 py-20 text-white text-center px-4 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
                 <div className="relative z-10 animate-fade-up">
-                    <h1 className="text-4xl md:text-6xl font-black mb-4 uppercase tracking-tighter">AI Health Guide</h1>
+                    <h1 className="text-4xl md:text-6xl font-black mb-4 uppercase tracking-tighter text-white">AI Health Guide</h1>
                     <p className="text-blue-100 max-w-2xl mx-auto font-bold uppercase tracking-widest text-xs">Intelligent Encyclopedia & Expert Symptom Awareness</p>
                     <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
                         <button onClick={() => setIsCheckerOpen(true)} className="px-8 py-3 bg-white text-blue-600 rounded-full font-black uppercase text-xs hover:scale-105 transition-all shadow-2xl flex items-center gap-2 mx-auto sm:mx-0">
