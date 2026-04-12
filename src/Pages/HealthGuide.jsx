@@ -56,7 +56,7 @@ const HealthGuide = () => {
                 setLoading(false);
             }
         };
-        Applied fuzzy match at line 43-58.
+
         fetchDiseases();
     }, []);
 
