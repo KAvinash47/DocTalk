@@ -13,6 +13,7 @@ const Login = lazy(() => import('../Pages/Login'));
 const Dashboard = lazy(() => import('../Pages/Dashboard'));
 const AIChat = lazy(() => import('../Pages/AIChat'));
 const HealthGuide = lazy(() => import('../Pages/HealthGuide'));
+const HealthTools = lazy(() => import('../Pages/HealthTools'));
 const DiseaseDetails = lazy(() => import('../Pages/DiseaseDetails'));
 import ProtectedRoute from './ProtectedRoute';
 
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: '/health-guide',
         Component: HealthGuide,
+      },
+      {
+        path: '/health-tools',
+        Component: HealthTools,
       },
       {
         path: '/disease/:id',

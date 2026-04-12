@@ -113,9 +113,14 @@ const HealthGuide = () => {
                 <div className="relative z-10 animate-fade-up">
                     <h1 className="text-4xl md:text-6xl font-black mb-4 uppercase tracking-tighter">AI Health Guide</h1>
                     <p className="text-blue-100 max-w-2xl mx-auto font-bold uppercase tracking-widest text-xs">Intelligent Encyclopedia & Expert Symptom Awareness</p>
-                    <button onClick={() => setIsCheckerOpen(true)} className="mt-8 px-8 py-3 bg-white text-blue-600 rounded-full font-black uppercase text-xs hover:scale-105 transition-all shadow-2xl flex items-center gap-2 mx-auto">
-                        <Bot size={18} /> Check Symptoms with AI
-                    </button>
+                    <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+                        <button onClick={() => setIsCheckerOpen(true)} className="px-8 py-3 bg-white text-blue-600 rounded-full font-black uppercase text-xs hover:scale-105 transition-all shadow-2xl flex items-center gap-2 mx-auto sm:mx-0">
+                            <Bot size={18} /> Check Symptoms
+                        </button>
+                        <button onClick={() => navigate('/health-tools')} className="px-8 py-3 bg-blue-500 text-white rounded-full font-black uppercase text-xs hover:scale-105 transition-all shadow-2xl flex items-center gap-2 mx-auto sm:mx-0 border border-white/20">
+                            <Zap size={18} /> Try Health Tools
+                        </button>
+                    </div>
                 </div>
             </div>
 
