@@ -38,7 +38,7 @@ const router = createBrowserRouter([
         path: '/disease/:id',
         Component: DiseaseDetails,
       },
- Applied fuzzy match at line 13-33.
+      {
         path: '/login',
         Component: Login,
       },

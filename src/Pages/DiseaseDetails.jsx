@@ -5,7 +5,7 @@ import {
     ArrowLeft, Activity, Salad, Dumbbell, AlertTriangle, 
     ShieldCheck, Stethoscope, Bot, X, Send, 
     Microscope, TrendingUp, Users, Info, BookOpen, HeartPulse,
-    Pills, Leaf, ShieldAlert
+    Pill, Leaf, ShieldAlert
 } from 'lucide-react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
 import { API_BASE_URL } from '../api/config';
@@ -97,7 +97,7 @@ const DiseaseDetails = () => {
                         <div className="absolute top-0 left-0 w-2 h-full bg-emerald-500"></div>
                         <div className="flex items-center gap-4 mb-8">
                             <div className="p-3 bg-emerald-50 dark:bg-emerald-900/30 rounded-2xl text-emerald-600">
-                                <Pills size={32} />
+                                <Pill size={32} />
                             </div>
                             <h3 className="text-2xl font-black text-slate-900 dark:text-white uppercase tracking-tight">Clinical Pharmacology</h3>
                         </div>
