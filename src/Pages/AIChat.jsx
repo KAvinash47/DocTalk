@@ -114,7 +114,15 @@ const AIChat = () => {
                                         : 'bg-white dark:bg-white/5 border border-slate-100 dark:border-white/10 text-slate-700 dark:text-slate-200 rounded-tl-none backdrop-blur-md'
                                     }`}
                                 >
-                                    {msg.text}
+                                    {msg.sender === 'ai' ? (
+                                        <div className="prose prose-sm dark:prose-invert max-w-none 
+                                            prose-p:leading-relaxed prose-pre:bg-slate-800 prose-pre:text-slate-100
+                                            prose-strong:text-blue-600 dark:prose-strong:text-blue-400 prose-ul:list-disc prose-ol:list-decimal">
+                                            <ReactMarkdown>{msg.text}</ReactMarkdown>
+                                        </div>
+                                    ) : (
+                                        msg.text
+                                    )}
                                 </div>
                             </div>
                         </motion.div>

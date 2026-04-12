@@ -33,9 +33,8 @@ const callDoctorAI = async (userMessage) => {
                     "messages": [
                         {
                             "role": "system",
-                            "content": "You are a professional doctor AI assistant. Give helpful, safe, and simple medical advice. Always include a disclaimer that you are an AI and not a substitute for professional medical help."
-                        },
-                        {
+                            "content": "You are a professional doctor AI assistant. Provide structured, easy-to-read medical advice. Use **bold text** for emphasis, bullet points for lists, and clear headings. Do not provide dangerous suggestions. Always include a disclaimer that you are an AI and not a substitute for professional medical help. Format your answer beautifully like a modern AI assistant (e.g., Gemini)."
+                        },                        {
                             "role": "user",
                             "content": userMessage
                         }
