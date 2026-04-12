@@ -4,26 +4,26 @@ const callDoctorAI = async (userMessage) => {
     const API_KEY = process.env.OPENROUTER_API_KEY;
     
     if (!API_KEY) {
-        console.error("CRITICAL: OPENROUTER_API_KEY is missing from environment variables.");
-        return "Doctor AI is currently misconfigured (Missing API Key).";
+        console.error("CRITICAL: OPENROUTER_API_KEY is missing.");
+        return "Doctor AI is currently misconfigured (Missing API Key on Server).";
     }
 
     try {
-        console.log("Calling OpenRouter API...");
+        // Try a very stable free model
         const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
             method: "POST",
             headers: {
                 "Authorization": `Bearer ${API_KEY}`,
                 "Content-Type": "application/json",
-                "HTTP-Referer": "http://localhost:5173", // Required by some OpenRouter models
+                "HTTP-Referer": "https://doctalk-compilecrew.vercel.app", 
                 "X-Title": "DocTalk"
             },
             body: JSON.stringify({
-                "model": "google/gemini-2.0-flash-lite-preview-02-05:free",
+                "model": "mistralai/mistral-7b-instruct:free",
                 "messages": [
                     {
                         "role": "system",
-                        "content": "You are a professional doctor AI assistant. Give helpful, safe, and simple medical advice. Do not provide dangerous or illegal suggestions. Keep responses short and clear. Always include a disclaimer that you are an AI."
+                        "content": "You are a professional doctor AI assistant. Give helpful, safe, and simple medical advice. Always include a disclaimer that you are an AI and not a substitute for professional medical help."
                     },
                     {
                         "role": "user",
@@ -35,15 +35,22 @@ const callDoctorAI = async (userMessage) => {
 
         const data = await response.json();
         
-        if (!response.ok || data.error) {
-            console.error("OpenRouter API Error:", data.error || `HTTP ${response.status}`);
-            return "Doctor AI is currently busy. Please try again in a moment.";
+        if (!response.ok) {
+            console.error("OpenRouter Error Response:", data);
+            if (response.status === 429) return "Doctor AI is receiving too many requests. Please wait a minute.";
+            if (response.status === 401) return "Doctor AI Authentication failed (Invalid API Key).";
+            return `AI Service Error (HTTP ${response.status}). Please try again later.`;
         }
 
-        return data.choices[0]?.message?.content || "I'm sorry, I couldn't process that request.";
+        if (data.error) {
+            console.error("OpenRouter Logic Error:", data.error);
+            return "The AI engine reported an error. Please try again in a moment.";
+        }
+
+        return data.choices[0]?.message?.content || "I'm sorry, I couldn't generate a response.";
     } catch (error) {
-        console.error("OpenRouter Connection Error:", error.message);
-        return "I'm having trouble connecting to the AI engine. Please try again later.";
+        console.error("Fetch/Network Error:", error.message);
+        return "Network error connecting to AI. Please check server logs.";
     }
 };
 
