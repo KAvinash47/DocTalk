@@ -38,17 +38,25 @@ const HealthGuide = () => {
         const fetchDiseases = async () => {
             try {
                 const res = await fetch(`${API_BASE_URL}/api/diseases`);
+                if (!res.ok) throw new Error("API failed");
                 const data = await res.json();
-                console.log("Fetched diseases:", data);
+                console.log("Fetched diseases from API:", data.length);
                 setDiseases(data);
             } catch (err) {
-                console.error("Error fetching diseases:", err);
-                // Fallback would go here
+                console.warn("API failed, falling back to local JSON...");
+                try {
+                    const localRes = await fetch('/Data/diseases.json');
+                    const localData = await localRes.json();
+                    console.log("Loaded diseases from local fallback:", localData.length);
+                    setDiseases(localData);
+                } catch (localErr) {
+                    console.error("Critical: Could not load local fallback data.", localErr);
+                }
             } finally {
                 setLoading(false);
             }
         };
-
+        Applied fuzzy match at line 43-58.
         fetchDiseases();
     }, []);
 
