@@ -8,11 +8,11 @@ const callDoctorAI = async (userMessage) => {
         return "Doctor AI is currently misconfigured (Missing API Key on Server).";
     }
 
-    // List of models to try in order of preference
+    // List of models to try in order of preference (Fastest first)
     const models = [
-        "google/gemini-2.0-flash-lite-preview-02-05:free",
+        "google/gemini-2.0-flash-lite-preview-02-05:free", // Extremely fast
         "mistralai/mistral-7b-instruct-v0.1:free",
-        "openrouter/auto" // Last resort auto-routing
+        "openrouter/auto" 
     ];
 
     let lastError = null;
@@ -20,6 +20,11 @@ const callDoctorAI = async (userMessage) => {
     for (const model of models) {
         try {
             console.log(`Calling OpenRouter API with model: ${model}...`);
+            
+            // Abort controller to prevent long hangs (15s timeout)
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 15000);
+
             const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
                 method: "POST",
                 headers: {
@@ -33,45 +38,36 @@ const callDoctorAI = async (userMessage) => {
                     "messages": [
                         {
                             "role": "system",
-                            "content": "You are a professional doctor AI assistant. Provide structured, easy-to-read medical advice. Use **bold text** for emphasis, bullet points for lists, and clear headings. Do not provide dangerous suggestions. Always include a disclaimer that you are an AI and not a substitute for professional medical help. Format your answer beautifully like a modern AI assistant (e.g., Gemini)."
-                        },                        {
+                            "content": "You are a professional doctor AI assistant. Provide structured, easy-to-read medical advice. Use **bold text** for emphasis, bullet points for lists, and clear headings. Always include a disclaimer that you are an AI. Keep responses concise and fast."
+                        },
+                        {
                             "role": "user",
                             "content": userMessage
                         }
-                    ]
-                })
+                    ],
+                    "max_tokens": 500 // Limit response length for speed
+                }),
+                signal: controller.signal
             });
 
+            clearTimeout(timeoutId);
             const data = await response.json();
             
             if (response.ok && !data.error) {
                 return data.choices[0]?.message?.content || "I'm sorry, I couldn't generate a response.";
             }
 
-            console.warn(`Model ${model} failed:`, data.error || `HTTP ${response.status}`);
+            console.warn(`Model ${model} failed or timed out:`, data.error || `HTTP ${response.status}`);
             lastError = data.error || { message: `HTTP ${response.status}` };
             
-            // If it's a 404, we definitely want to try the next model
-            // If it's a 429 (Rate Limit), we might as well stop or try another
-            if (response.status !== 404 && response.status !== 429) {
-                // For other errors, we still try the next model in our list
-                continue;
-            }
         } catch (error) {
             console.error(`Fetch error for model ${model}:`, error.message);
             lastError = error;
         }
     }
 
-    // If we get here, all models failed
-    if (lastError?.code === 429 || lastError?.message?.includes('429')) {
-        return "Doctor AI is receiving too many requests right now. Please try again in a minute.";
-    }
-    if (lastError?.code === 401 || lastError?.message?.includes('401')) {
-        return "Doctor AI Authentication failed. Please check the server configuration.";
-    }
-    
-    return `AI Service currently unavailable (Last Error: ${lastError?.message || 'Unknown'}). Please try again later.`;
+    if (lastError?.name === 'AbortError') return "The AI is taking too long to respond. Please try a shorter question.";
+    return `AI Service currently unavailable. Please try again in a moment.`;
 };
 
 module.exports = { callDoctorAI };
