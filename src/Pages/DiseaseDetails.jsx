@@ -211,7 +211,7 @@ const DiseaseDetails = () => {
                     <div className="bg-gradient-to-br from-indigo-600 to-blue-800 rounded-[40px] p-10 text-white shadow-2xl relative overflow-hidden group">
                         <Bot className="absolute -bottom-6 -right-6 text-white/10 group-hover:scale-110 transition-transform duration-700" size={150} />
                         <h3 className="text-3xl font-black mb-4 uppercase tracking-tighter leading-none">Diagnostic <br/> Simulation</h3>
-                        <p className="text-blue-100 text-sm font-medium mb-10 leading-relaxed">Consult CompileXBot for an intelligent comparison of your symptoms.</p>
+                        <p className="text-blue-100 text-sm font-medium mb-10 leading-relaxed">Consult PulseTalk for an intelligent comparison of your symptoms.</p>
                         <button onClick={() => setIsCheckerOpen(true)} className="w-full py-5 bg-white text-blue-600 rounded-2xl font-black uppercase text-xs tracking-widest hover:scale-[1.02] active:scale-95 transition-all shadow-xl">Initiate AI Check</button>
                     </div>
 

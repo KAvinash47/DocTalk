@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, Sparkles } from 'lucide-react';
+import { Send, Sparkles, Shield } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const AIAssistant = () => {
@@ -19,18 +19,17 @@ const AIAssistant = () => {
             
             <div className="w-11/12 max-w-4xl mx-auto relative z-10 text-center">
                 <div className="mb-8 md:mb-12">
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         className="inline-flex items-center gap-2 px-4 py-1.5 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400 text-[10px] md:text-xs font-black uppercase tracking-widest mb-4 md:mb-6"
                     >
-                        <Sparkles size={14} />
-                        New Update
+                        <Shield size={14} />
+                        We Provide Best Medical Services
                     </motion.div>
                     <h2 className="text-3xl md:text-5xl font-black text-white mb-2 tracking-tighter leading-none px-2">
-                        CompileXBot <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Voice Assistant</span>
-                    </h2>
-                    <p className="text-slate-400 font-bold uppercase tracking-widest text-[9px] md:text-[10px]">24/7 Intelligent Medical Guidance</p>
+                        PulseTalk <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Voice Assistant</span>
+                    </h2>                    <p className="text-slate-400 font-bold uppercase tracking-widest text-[9px] md:text-[10px]">24/7 Intelligent Medical Guidance</p>
                 </div>
 
                 {/* THE ORB */}
@@ -75,8 +74,8 @@ const AIAssistant = () => {
                             </button>
                         </div>
                     </div>
-                    <p className="mt-4 text-[8px] md:text-[9px] text-slate-600 font-black uppercase tracking-[0.2em]">
-                        ⚠️ Safe private consultation
+                    <p className="mt-4 text-[8px] md:text-[9px] text-slate-600 font-black uppercase tracking-[0.2em] flex items-center justify-center gap-1">
+                        <Shield size={10} /> Safe private consultation
                     </p>
                 </div>
             </div>

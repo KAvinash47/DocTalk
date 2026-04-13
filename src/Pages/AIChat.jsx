@@ -169,8 +169,8 @@ const AIChat = () => {
                         </div>
                     </div>
                     <div className="mt-4 flex items-center justify-center gap-2 text-[10px] text-slate-400 dark:text-slate-500 font-black uppercase tracking-[0.2em]">
-                        <Sparkles size={12} className="text-blue-500" />
-                        AI Powered Medical Guidance
+                        <Shield size={12} className="text-blue-500" />
+                        We Provide Best Medical Services
                     </div>
                 </div>
             </footer>
