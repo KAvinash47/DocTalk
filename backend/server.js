@@ -17,7 +17,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// In-memory storage for bookings (mimicking root server.js)
+// In-memory storage for bookings
 let bookings = [];
 
 // Helper to read JSON files safely
@@ -37,7 +37,7 @@ const readJsonFile = (filePath) => {
 
 // --- API Routes ---
 
-app.get('/', (req, res) => res.json({ status: "Backend is running!", engine: "DeepSeek V3" }));
+app.get('/', (req, res) => res.json({ status: "Backend is running!", engine: "PulseTalk AI" }));
 
 // ✅ GET all doctors
 app.get('/api/doctors', (req, res) => {
@@ -58,11 +58,23 @@ app.get('/api/diseases/:id', (req, res) => {
     res.json(disease);
 });
 
+// ✅ GET all bookings (for dashboard debugging/filtering)
+app.get('/api/bookings', (req, res) => {
+    res.json(bookings);
+});
+
 // ✅ GET user bookings
 app.get('/api/bookings/user/:userId', (req, res) => {
     const { userId } = req.params;
     const userBookings = bookings.filter(b => b.userId === userId);
     res.json(userBookings);
+});
+
+// ✅ GET doctor bookings
+app.get('/api/bookings/doctor/:doctorId', (req, res) => {
+    const { doctorId } = req.params;
+    const doctorBookings = bookings.filter(b => String(b.doctorId) === String(doctorId));
+    res.json(doctorBookings);
 });
 
 // ✅ POST new booking
@@ -78,7 +90,7 @@ app.post('/api/bookings', (req, res) => {
     if (!doctor) return res.status(404).json({ message: "Doctor not found" });
 
     const newBooking = {
-        id: Date.now(),
+        id: Date.now().toString(),
         doctorId: parseInt(doctorId),
         userId: userId || "guest",
         doctorName: doctor.name,
@@ -90,7 +102,20 @@ app.post('/api/bookings', (req, res) => {
     };
 
     bookings.push(newBooking);
+    console.log("New booking created:", newBooking);
     res.status(201).json(newBooking);
+});
+
+// ✅ PATCH update booking status (Accept/Reject)
+app.patch('/api/bookings/:id/status', (req, res) => {
+    const { id } = req.params;
+    const { status } = req.body;
+
+    const bookingIndex = bookings.findIndex(b => b.id === id);
+    if (bookingIndex === -1) return res.status(404).json({ message: "Booking not found" });
+
+    bookings[bookingIndex].status = status;
+    res.json(bookings[bookingIndex]);
 });
 
 // ✅ POST AI Chat
@@ -103,7 +128,7 @@ app.post('/api/ai-chat', async (req, res) => {
         res.json({ reply });
     } catch (error) {
         console.error("AI Chat Error:", error);
-        res.status(500).json({ reply: "The AI engine reported an error. Please try again in a moment. (v2)" });
+        res.status(500).json({ reply: "The AI engine reported an error. Please try again in a moment." });
     }
 });
 
@@ -121,7 +146,7 @@ app.post('/api/ai-check', async (req, res) => {
         res.json({ reply });
     } catch (error) {
         console.error("AI Check Error:", error);
-        res.status(500).json({ reply: "The AI engine reported an error. Please try again in a moment. (v2)" });
+        res.status(500).json({ reply: "The AI engine reported an error. Please try again in a moment." });
     }
 });
 
