@@ -62,15 +62,15 @@ const Footer = () => {
                         <div className="space-y-4">
                             <div className="flex items-start gap-3">
                                 <FaMapMarkerAlt className="text-blue-600 mt-1" />
-                                <span className="text-slate-500 dark:text-slate-400 text-sm font-medium">123 Health Ave, Medical District,<br/> New York, NY 10001</span>
+                                <span className="text-slate-500 dark:text-slate-400 text-sm font-medium">Poornima University, IS-2027-2031, Ramchandrapura, P.O. Vidhani Vatika, Sitapura Extension, Jaipur, Rajasthan 303905</span>
                             </div>
                             <div className="flex items-center gap-3">
                                 <FaPhoneAlt className="text-blue-600" />
-                                <span className="text-slate-500 dark:text-slate-400 text-sm font-medium">+1 (234) 567-890</span>
+                                <span className="text-slate-500 dark:text-slate-400 text-sm font-medium">+91 7976739844</span>
                             </div>
                             <div className="flex items-center gap-3">
                                 <FaEnvelope className="text-blue-600" />
-                                <span className="text-slate-500 dark:text-slate-400 text-sm font-medium">contact@doctalk.com</span>
+                                <span className="text-slate-500 dark:text-slate-400 text-sm font-medium">support@doctalk.com</span>
                             </div>
                         </div>
                     </div>
