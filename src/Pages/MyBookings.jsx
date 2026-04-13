@@ -89,8 +89,30 @@ const MyBookings = () => {
                                         <div className="space-y-1">
                                             <p className="text-gray-500 dark:text-slate-400 font-bold text-sm">Date: <span className="text-slate-900 dark:text-white">{appointment.appointmentDate}</span></p>
                                             <p className="text-gray-500 dark:text-slate-400 font-bold text-sm">Time: <span className="text-slate-900 dark:text-white">{appointment.timeSlot}</span></p>
+                                            <div className="mt-2">
+                                                <span className={`px-3 py-1 rounded-lg text-[10px] font-black uppercase ${
+                                                    appointment.status === "accepted" ? "bg-green-100 text-green-700" : 
+                                                    appointment.status === "rejected" ? "bg-red-100 text-red-700" : 
+                                                    "bg-yellow-100 text-yellow-700"
+                                                }`}>
+                                                    {appointment.status || "pending"}
+                                                </span>
+                                            </div>
                                         </div>
-                                        <p className="text-2xl font-black text-blue-600 dark:text-blue-400 mt-4">₹{appointment.fee}</p>
+                                        <div className="flex items-center gap-4 mt-4">
+                                            <p className="text-2xl font-black text-blue-600 dark:text-blue-400">₹{appointment.fee}</p>
+                                            {appointment.status === "accepted" && (
+                                                <a 
+                                                    href={`https://meet.jit.si/DocTalk_Session_${appointment.id}`} 
+                                                    target="_blank" 
+                                                    rel="noreferrer"
+                                                    className="px-6 py-2 bg-green-600 text-white rounded-xl font-black text-[10px] uppercase tracking-widest shadow-lg hover:bg-green-700 transition-all flex items-center gap-2 animate-pulse"
+                                                >
+                                                    <div className="w-2 h-2 bg-white rounded-full animate-ping"></div>
+                                                    Join Video Call
+                                                </a>
+                                            )}
+                                        </div>
                                     </div>
                                     <button onClick={() => handleCancelAppointment(appointment.id)} className="btn btn-error btn-outline rounded-2xl px-8 font-bold border-2">Cancel</button>
                                 </div>

@@ -110,6 +110,16 @@ const Dashboard = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3">
+                {app.status === "accepted" && (
+                    <a 
+                        href={`https://meet.jit.si/DocTalk_Session_${app.id}`} 
+                        target="_blank" 
+                        rel="noreferrer"
+                        className="px-8 py-4 bg-green-600 text-white rounded-2xl font-black text-xs uppercase tracking-widest shadow-lg hover:bg-green-700 transition-all flex items-center justify-center gap-2 animate-pulse"
+                    >
+                        Join Video Call
+                    </a>
+                )}
                 {app.status === "pending" ? (
                     <>
                         <button onClick={() => updateStatus(app.id, "accepted")} className="px-8 py-4 bg-blue-600 text-white rounded-2xl font-black text-xs uppercase tracking-widest shadow-lg hover:bg-blue-700 transition-all active:scale-95">Accept Session</button>
