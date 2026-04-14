@@ -62,7 +62,7 @@ const Dashboard = () => {
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 py-16 px-4 transition-colors">
       <div className="max-w-5xl mx-auto mb-10 text-center">
         <h2 className="text-4xl font-black text-slate-900 dark:text-white tracking-tight uppercase">
-          PulseTalk Dashboard
+          DocTalk Dashboard
         </h2>
         <div className="mt-4 flex flex-col items-center gap-2">
             <span className="px-4 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-xs font-black uppercase">
