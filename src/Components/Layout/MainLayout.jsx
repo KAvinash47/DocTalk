@@ -5,6 +5,7 @@ import Footer from '../Footer';
 import Loader from '../Loader';
 import CustomCursor from '../CustomCursor';
 import MobileNavbar from '../MobileNavbar';
+import EmergencySOS from '../EmergencySOS';
 
 const MainLayout = () => {
   const navigation = useNavigation();
@@ -26,6 +27,7 @@ const MainLayout = () => {
       </main>
       <Footer />
       <MobileNavbar />
+      <EmergencySOS />
     </div>
   );
 };

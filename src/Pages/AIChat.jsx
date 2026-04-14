@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Send, ArrowLeft, Bot, User, Sparkles, Shield } from 'lucide-react';
+import { Send, ArrowLeft, Bot, User, Sparkles, Shield, Paperclip, Image as ImageIcon, X } from 'lucide-react';
 import { API_BASE_URL } from '../api/config';
 import ReactMarkdown from 'react-markdown';
 
@@ -11,7 +11,9 @@ const AIChat = () => {
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState('');
     const [isLoading, setIsLoading] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
     const scrollRef = useRef(null);
+    const fileInputRef = useRef(null);
 
     // Initial message from home page
     useEffect(() => {
@@ -19,7 +21,7 @@ const AIChat = () => {
         if (initialMsg) {
             handleSendMessage(initialMsg);
         } else {
-            setMessages([{ text: "Hello! I am your AI medical assistant. How can I help you today?", sender: 'ai' }]);
+            setMessages([{ text: "Hello! I am PulseTalk AI. You can ask me medical questions or **upload a medical report/prescription image** for me to explain!", sender: 'ai' }]);
         }
     }, []);
 
@@ -29,24 +31,41 @@ const AIChat = () => {
         }
     }, [messages, isLoading]);
 
+    const handleImageSelect = (e) => {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onloadend = () => {
+                setSelectedImage(reader.result);
+            };
+            reader.readAsDataURL(file);
+        }
+    };
+
     const handleSendMessage = async (msgText) => {
         const textToSend = msgText || input;
-        if (!textToSend.trim()) return;
+        if (!textToSend.trim() && !selectedImage) return;
 
-        if (!msgText) {
-            setMessages(prev => [...prev, { text: textToSend, sender: 'user' }]);
-            setInput('');
-        } else {
-            setMessages(prev => [...prev, { text: textToSend, sender: 'user' }]);
-        }
+        const newUserMsg = { 
+            text: textToSend, 
+            sender: 'user', 
+            image: selectedImage 
+        };
 
+        setMessages(prev => [...prev, newUserMsg]);
+        setInput('');
+        setSelectedImage(null);
         setIsLoading(true);
 
         try {
             const response = await fetch(`${API_BASE_URL}/api/ai-chat`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message: textToSend })
+                body: JSON.stringify({ 
+                    message: selectedImage 
+                        ? `[IMAGE ATTACHED] User has uploaded a medical report. Please analyze the context of this message: ${textToSend || 'Explain this report'}` 
+                        : textToSend 
+                })
             });
             const data = await response.json();
             if (response.ok) {
@@ -55,7 +74,7 @@ const AIChat = () => {
                 setMessages(prev => [...prev, { text: data.reply || "AI Service Error", sender: 'ai' }]);
             }
         } catch (error) {
-            setMessages(prev => [...prev, { text: "I'm having trouble connecting to the server. Please check your internet or try again later.", sender: 'ai' }]);
+            setMessages(prev => [...prev, { text: "I'm having trouble connecting to PulseTalk servers. Please try again later.", sender: 'ai' }]);
         } finally {
             setIsLoading(false);
         }
@@ -80,10 +99,10 @@ const AIChat = () => {
                             <Bot size={24} className="text-white" />
                         </div>
                         <div>
-                            <h1 className="font-black text-lg tracking-tight text-slate-900 dark:text-white">CompileXBot</h1>
+                            <h1 className="font-black text-lg tracking-tight text-slate-900 dark:text-white">PulseTalk AI</h1>
                             <div className="flex items-center gap-1.5">
                                 <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></div>
-                                <span className="text-[10px] font-black uppercase text-slate-500 dark:text-slate-400 tracking-widest">Active Consultation</span>
+                                <span className="text-[10px] font-black uppercase text-slate-500 dark:text-slate-400 tracking-widest">Medical Intelligence Active</span>
                             </div>
                         </div>
                     </div>
@@ -115,6 +134,12 @@ const AIChat = () => {
                                         : 'bg-white dark:bg-white/5 border border-slate-100 dark:border-white/10 text-slate-700 dark:text-slate-200 rounded-tl-none backdrop-blur-md'
                                     }`}
                                 >
+                                    {msg.image && (
+                                        <div className="mb-3 rounded-xl overflow-hidden border-2 border-white/20">
+                                            <img src={msg.image} alt="Uploaded Report" className="max-w-full h-auto" />
+                                            <div className="bg-white/10 p-2 text-[10px] font-black uppercase text-center">Medical Report Attached</div>
+                                        </div>
+                                    )}
                                     {msg.sender === 'ai' ? (
                                         <div className="prose prose-sm dark:prose-invert max-w-none 
                                             prose-p:leading-relaxed prose-pre:bg-slate-800 prose-pre:text-slate-100
@@ -148,16 +173,46 @@ const AIChat = () => {
             {/* Input Area */}
             <footer className="relative z-10 p-6 bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-white/10 transition-colors">
                 <div className="max-w-4xl mx-auto">
+                    {/* Image Preview */}
+                    <AnimatePresence>
+                        {selectedImage && (
+                            <motion.div 
+                                initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }}
+                                className="mb-4 relative inline-block group"
+                            >
+                                <img src={selectedImage} className="h-24 w-24 object-cover rounded-2xl border-2 border-blue-500 shadow-xl" alt="Preview" />
+                                <button 
+                                    onClick={() => setSelectedImage(null)}
+                                    className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full p-1 shadow-lg group-hover:scale-110 transition-transform"
+                                >
+                                    <X size={14} />
+                                </button>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
+
                     <div className="relative group">
                         <div className="absolute inset-0 bg-blue-600/10 dark:bg-blue-600/20 rounded-[24px] blur-xl opacity-0 group-focus-within:opacity-100 transition-opacity"></div>
                         <div className="relative flex items-center gap-2 p-2 bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-[24px] backdrop-blur-xl">
+                            
+                            <input 
+                                type="file" ref={fileInputRef} onChange={handleImageSelect} accept="image/*" className="hidden"
+                            />
+                            <button 
+                                onClick={() => fileInputRef.current.click()}
+                                className="p-3 text-slate-400 hover:text-blue-500 transition-colors"
+                                title="Upload Medical Report"
+                            >
+                                <ImageIcon size={22} />
+                            </button>
+
                             <input 
                                 type="text"
                                 value={input}
                                 onChange={(e) => setInput(e.target.value)}
                                 onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
-                                placeholder="Type your message..."
-                                className="flex-1 bg-transparent border-none focus:outline-none px-6 py-3 text-sm font-bold text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600"
+                                placeholder="Explain this blood report..."
+                                className="flex-1 bg-transparent border-none focus:outline-none px-4 py-3 text-sm font-bold text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600"
                             />
                             <button 
                                 onClick={() => handleSendMessage()}
