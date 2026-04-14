@@ -1,12 +1,14 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 import { ThemeContext } from "../context/ThemeContext";
-import { Sun, Moon } from "lucide-react";
+import { Sun, Moon, AlertTriangle } from "lucide-react";
+import EmergencySOS from "./EmergencySOS";
 
 const Navbar = () => {
   const { user, logout } = useContext(AuthContext);
   const { theme, toggleTheme } = useContext(ThemeContext);
+  const [isSOSOpen, setIsSOSOpen] = useState(false);
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -46,7 +48,7 @@ const Navbar = () => {
     <nav className="w-full bg-white/90 dark:bg-slate-900/90 backdrop-blur-md sticky top-0 z-[5000] border-b border-gray-100 dark:border-slate-800 transition-colors py-3">
       <div className="w-11/12 max-w-7xl mx-auto flex items-center justify-between">
         
-        {/* LOGO AREA - No Hamburger logic at all */}
+        {/* LOGO AREA */}
         <div
           onClick={() => navigate("/")}
           className="flex items-center gap-2 sm:gap-3 cursor-pointer group"
@@ -59,7 +61,7 @@ const Navbar = () => {
               />
           </div>
           <span className="text-xl sm:text-2xl font-black bg-gradient-to-r from-blue-700 to-blue-500 dark:from-blue-400 dark:to-blue-200 bg-clip-text text-transparent tracking-tighter">
-            DocTalk
+            PulseTalk
           </span>
           <span className="text-[8px] font-bold bg-blue-600 text-white px-1.5 py-0.5 rounded-md ml-1 hidden sm:inline-block">LIVE v2.0</span>
         </div>
@@ -67,8 +69,16 @@ const Navbar = () => {
         {/* CENTER LINKS (Desktop Only) */}
         {navLinks}
 
-        {/* ACTIONS (Login/Logout) */}
+        {/* ACTIONS (SOS + Login/Logout) */}
         <div className="flex items-center gap-2 sm:gap-4">
+          <button 
+            onClick={() => setIsSOSOpen(true)}
+            className="flex items-center gap-2 px-3 sm:px-5 py-2 bg-red-600/10 hover:bg-red-600 text-red-600 hover:text-white rounded-full font-black text-[10px] sm:text-xs uppercase tracking-widest border border-red-600/20 transition-all group shadow-lg shadow-red-600/5"
+          >
+            <AlertTriangle size={14} className="group-hover:animate-pulse" />
+            <span>SOS</span>
+          </button>
+
           {!user ? (
             <button
               onClick={() => navigate("/login")}
@@ -87,6 +97,7 @@ const Navbar = () => {
         </div>
 
       </div>
+      <EmergencySOS isOpen={isSOSOpen} setIsOpen={setIsSOSOpen} />
     </nav>
   );
 };
