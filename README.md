@@ -1,6 +1,6 @@
 # DocTalk – Doctor Appointment Booking System
 
-🌐 Live Website: https://doctalkapp.vercel.app
+🌐 Live Website: https://doctalk-compilecrew.vercel.app
 
 ## Overview
 DocTalk is a doctor appointment booking platform where patients can browse doctors, view their profiles, and book appointments. Doctors can manage appointments from their dashboard.
