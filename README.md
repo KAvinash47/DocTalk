@@ -1,6 +1,6 @@
 # DocTalk – AI-Powered Health & Doctor Appointment Platform
 
-🌐 **Live Website:** [doctalkapp.vercel.app](https://doctalkapp.vercel.app)
+🌐 **Live Website:** [doctalk-compilecrew.vercel.app](https://doctalk-compilecrew.vercel.app)
 
 ## 🚀 Overview
 **DocTalk** is a comprehensive health management platform that combines traditional doctor appointment booking with advanced AI-driven medical assistance. Built with a modern glassmorphism UI, it provides patients with a seamless experience for managing their health, consulting with AI, and booking professional medical services.
