@@ -2,45 +2,41 @@ const path = require('path');
 require('dotenv').config({ path: path.join(__dirname, '.env') });
 
 /**
- * PulseTalk AI - Powered by NVIDIA & OpenRouter
+ * PulseTalk AI - Final Stabilized Version
  */
 const callDoctorAI = async (userMessage) => {
     const NVIDIA_API_KEY = process.env.NVIDIA_API_KEY;
     const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
     
     if (NVIDIA_API_KEY) {
+        // Prioritize the model that was verified to work locally first, 
+        // then try the larger ones to avoid "Unavailable" messages.
         const modelsToTry = [
-            "google/gemma-4-31b-it", 
-            "meta/llama-3.1-405b-instruct",
-            "meta/llama-3.1-70b-instruct",
-            "meta/llama-3.1-8b-instruct"
+            "meta/llama-3.1-8b-instruct", // High reliability
+            "google/gemma-4-31b-it",      // User's specific request
+            "meta/llama-3.1-405b-instruct"
         ];
 
         for (const model of modelsToTry) {
             try {
-                console.log(`Calling NVIDIA API with model: ${model}...`);
+                console.log(`PulseTalk: Attempting ${model}...`);
                 const controller = new AbortController();
-                const timeoutId = setTimeout(() => controller.abort(), 60000); // 60s for large models
+                const timeoutId = setTimeout(() => controller.abort(), 15000); // 15s per attempt
 
                 const response = await fetch("https://integrate.api.nvidia.com/v1/chat/completions", {
                     method: "POST",
                     headers: {
                         "Authorization": `Bearer ${NVIDIA_API_KEY.trim()}`,
-                        "Content-Type": "application/json",
-                        "Accept": "application/json"
+                        "Content-Type": "application/json"
                     },
                     body: JSON.stringify({
                         "model": model,
                         "messages": [
-                            { 
-                                "role": "system", 
-                                "content": "You are a professional doctor AI assistant. Provide structured medical advice. Use **bold text** for emphasis. Always include a disclaimer that you are an AI." 
-                            },
+                            { "role": "system", "content": "You are a professional doctor AI assistant. Be concise and accurate." },
                             { "role": "user", "content": userMessage }
                         ],
                         "max_tokens": 1024,
-                        "temperature": 0.7,
-                        "chat_template_kwargs": { "enable_thinking": true }
+                        "temperature": 0.7
                     }),
                     signal: controller.signal
                 });
@@ -49,23 +45,20 @@ const callDoctorAI = async (userMessage) => {
                 const data = await response.json();
                 
                 if (response.ok && data.choices?.[0]?.message?.content) {
-                    console.log(`NVIDIA API Success with ${model}!`);
-                    let content = data.choices[0].message.content;
-                    content = content.replace(/<thought>[\s\S]*?<\/thought>/g, '').trim();
-                    return content;
+                    console.log(`PulseTalk: Success with ${model}`);
+                    return data.choices[0].message.content;
                 }
-                console.warn(`NVIDIA model ${model} failed:`, data.error?.message || response.status);
+                console.warn(`PulseTalk: ${model} failed with status ${response.status}`);
             } catch (e) {
-                console.error(`Error with NVIDIA model ${model}:`, e.message);
+                console.error(`PulseTalk: ${model} error: ${e.message}`);
             }
-            // Small delay before next model
-            await new Promise(resolve => setTimeout(resolve, 500));
         }
     }
 
+    // Secondary Fallback: OpenRouter
     if (OPENROUTER_API_KEY) {
         try {
-            console.log("Calling OpenRouter Fallback...");
+            console.log("PulseTalk: Falling back to OpenRouter...");
             const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
                 method: "POST",
                 headers: {
@@ -74,24 +67,18 @@ const callDoctorAI = async (userMessage) => {
                 },
                 body: JSON.stringify({
                     "model": "google/gemini-2.0-flash-lite-preview-02-05:free",
-                    "messages": [
-                        { "role": "system", "content": "You are a professional doctor AI assistant. Always include a disclaimer." },
-                        { "role": "user", "content": userMessage }
-                    ],
-                    "max_tokens": 1000
+                    "messages": [{ "role": "user", "content": userMessage }]
                 })
             });
 
             const data = await response.json();
-            if (response.ok && data.choices?.[0]?.message?.content) {
-                return data.choices[0].message.content;
-            }
-        } catch (error) {
-            console.error("OpenRouter fallback error:", error.message);
+            if (data.choices?.[0]?.message?.content) return data.choices[0].message.content;
+        } catch (e) {
+            console.error("PulseTalk: OpenRouter fallback failed:", e.message);
         }
     }
 
-    return "PulseTalk AI is currently unavailable. Please check your internet connection or try again later.";
+    return "AI Service temporarily overloaded. Please try again in a few seconds.";
 };
 
 module.exports = { callDoctorAI };
